@@ -44,18 +44,6 @@ EMAIL_PASS=your_gmail_app_password
 EMAIL_TO=your_destination_email
 ```
 
-## Build for Production
-
-```bash
-npm run build
-```
-
-## Start Production Server
-
-```bash
-npm run start
-```
-
 ## Deploy to Vercel
 
 1. Push this repository to GitHub.
@@ -80,3 +68,4 @@ my-portfolio/
 ## License
 
 MIT License - feel free to use this template for your own portfolio!
+
