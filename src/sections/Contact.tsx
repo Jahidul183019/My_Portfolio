@@ -15,7 +15,6 @@ import { useToast } from "@/hooks/use-toast";
 ----------------------------*/
 const formSchema = z.object({
   name: z.string().min(1, "Name is required").max(100),
-  email: z.string().email("Invalid email address"),
   message: z
     .string()
     .min(10, "Message must be at least 10 characters")
@@ -25,16 +24,36 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 /* ---------------------------
-   MOCK API (SAFE fallback)
-   Replace later with real API
+   Contact API
+   Configure with VITE_CONTACT_FORM_ENDPOINT
 ----------------------------*/
 const sendMessageAPI = async (data: FormData) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log("Message sent:", data);
-      resolve(true);
-    }, 1200);
+  const endpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || "/api/contact";
+
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      ...data,
+      subject: `Portfolio contact from ${data.name}`,
+    }),
   });
+
+  if (!response.ok) {
+    let errorMessage = "Failed to send message.";
+
+    try {
+      const payload = await response.json();
+      errorMessage = payload?.error || payload?.message || errorMessage;
+    } catch {
+      // Keep default error message when response is not JSON.
+    }
+
+    throw new Error(errorMessage);
+  }
 };
 
 /* ---------------------------
@@ -66,9 +85,14 @@ export function Contact() {
 
       reset();
     } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Failed to send message. Please try again later.";
+
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again later.",
+        description: message,
         variant: "destructive",
       });
     } finally {
@@ -169,8 +193,8 @@ export function Contact() {
             className="lg:col-span-3 glass-card rounded-2xl p-8"
           >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-              {/* Name + Email */}
-              <div className="grid sm:grid-cols-2 gap-6">
+              {/* Name */}
+              <div>
                 <div>
                   <Input
                     placeholder="Your Name"
@@ -183,18 +207,6 @@ export function Contact() {
                   )}
                 </div>
 
-                <div>
-                  <Input
-                    type="email"
-                    placeholder="Email Address"
-                    {...register("email")}
-                  />
-                  {errors.email && (
-                    <p className="text-red-500 text-xs mt-1">
-                      {errors.email.message}
-                    </p>
-                  )}
-                </div>
               </div>
 
               {/* Message */}
