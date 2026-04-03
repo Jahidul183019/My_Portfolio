@@ -8,6 +8,16 @@ function getRequiredEnv(name) {
   return value;
 }
 
+function pickEnv(...names) {
+  for (const name of names) {
+    const value = process.env[name];
+    if (value) {
+      return value;
+    }
+  }
+  return undefined;
+}
+
 export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -31,11 +41,11 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Name and message are required." });
     }
 
-    const smtpHost = getRequiredEnv("SMTP_HOST");
-    const smtpPort = Number(process.env.SMTP_PORT || 587);
-    const smtpUser = getRequiredEnv("SMTP_USER");
-    const smtpPass = getRequiredEnv("SMTP_PASS");
-    const contactTo = getRequiredEnv("CONTACT_TO_EMAIL");
+    const smtpHost = pickEnv("SMTP_HOST") || "smtp.gmail.com";
+    const smtpPort = Number(pickEnv("SMTP_PORT") || 465);
+    const smtpUser = pickEnv("SMTP_USER", "EMAIL_USER") || getRequiredEnv("EMAIL_USER");
+    const smtpPass = pickEnv("SMTP_PASS", "EMAIL_PASS") || getRequiredEnv("EMAIL_PASS");
+    const contactTo = pickEnv("CONTACT_TO_EMAIL", "EMAIL_TO") || getRequiredEnv("EMAIL_TO");
 
     const transporter = nodemailer.createTransport({
       host: smtpHost,
@@ -48,7 +58,7 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: process.env.CONTACT_FROM_EMAIL || smtpUser,
+      from: pickEnv("CONTACT_FROM_EMAIL", "EMAIL_USER") || smtpUser,
       to: contactTo,
       subject: `Portfolio contact from ${name}`,
       text: `Name: ${name}\n\nMessage:\n${message}`,
