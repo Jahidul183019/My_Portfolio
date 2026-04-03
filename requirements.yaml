@@ -1,0 +1,26 @@
+packages:
+  "framer-motion": "For premium smooth animations, scroll reveals, and micro-interactions"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod validation integration with react-hook-form"
+  "lucide-react": "For crisp, modern icons"
+  "clsx": "For conditional class name merging"
+  "tailwind-merge": "For safely merging Tailwind utility classes"
+
+images:
+  - path: "artifacts/portfolio/public/images/avatar.png"
+    description: "A professional, stylized illustrated avatar of a male software engineer wearing glasses and a dark tech-wear hoodie, futuristic cyberpunk lighting with cyan and purple hues, clean dark background"
+    aspect_ratio: "1:1"
+  - path: "artifacts/portfolio/public/images/project-1.png"
+    description: "Abstract representation of a task management application dashboard, sleek dark UI, glassmorphism elements, glowing cyan accents, isometric perspective"
+    aspect_ratio: "16:9"
+  - path: "artifacts/portfolio/public/images/project-2.png"
+    description: "Abstract representation of an e-commerce platform, digital storefront concepts, shopping cart wireframes, floating 3D elements, deep navy background with purple gradients"
+    aspect_ratio: "16:9"
+  - path: "artifacts/portfolio/public/images/project-3.png"
+    description: "Abstract visual representation of algorithms and data structures, glowing nodes and connected graphs, binary code elements, high-tech dark background"
+    aspect_ratio: "16:9"
+
+notes:
+  - Using framer-motion heavily for scroll animations and layout transitions.
+  - Using generated useSendContactMessage hook from @workspace/api-client-react for the contact form.
+  - The requested /me.jpeg will fall back to the generated avatar.png if missing.

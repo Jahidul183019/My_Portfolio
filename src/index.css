@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* Tailwind core */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== CSS VARIABLES ========== */
+:root {
+  --background: 232 59% 10%;
+  --foreground: 0 0% 98%;
+
+  --card: 233 52% 13%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 233 52% 13%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 190 100% 50%;
+  --primary-foreground: 232 59% 10%;
+
+  --secondary: 263 91% 58%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 233 30% 25%;
+  --muted-foreground: 215 20% 65%;
+
+  --accent: 263 91% 58%;
+  --accent-foreground: 0 0% 98%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 233 40% 25%;
+  --input: 233 40% 25%;
+  --ring: 190 100% 50%;
+}
+
+/* Light mode */
+.light {
+  --background: 0 0% 100%;
+  --foreground: 232 59% 10%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 232 59% 10%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 232 59% 10%;
+
+  --primary: 190 100% 40%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 263 91% 58%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 190 100% 40%;
+}
+
+/* ========== BASE STYLES ========== */
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased overflow-x-hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+/* ========== UTILITIES ========== */
+@layer utilities {
+  .glass-card {
+    @apply bg-card/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+  }
+
+  .glass-nav {
+    @apply bg-background/70 backdrop-blur-md border-b border-white/5 shadow-sm;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500;
+  }
+
+  .text-gradient-hover {
+    @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-cyan-400 hover:to-purple-500 transition-all duration-300;
+  }
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
