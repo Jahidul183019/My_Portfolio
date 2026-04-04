@@ -149,7 +149,3 @@ pnpm preview
 - Project cards and modal data: `src/sections/Projects.tsx`
 - Contact details and form logic: `src/sections/Contact.tsx`
 - Theme variables and global styling: `src/index.css`
-
-## License
-
-This project is open source and available under the MIT License.
