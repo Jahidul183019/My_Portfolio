@@ -18,6 +18,9 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/about" component={Home} />
+      <Route path="/projects" component={Home} />
+      <Route path="/contact" component={Home} />
       {/* Portfolio is primarily a single page app, but handles 404s gracefully */}
       <Route component={NotFound} />
     </Switch>

@@ -197,7 +197,7 @@ export function Projects() {
                   <span className="text-xs uppercase tracking-[0.25em] text-primary/80">{project.category}</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4 flex-grow leading-relaxed">
+                <p className="text-muted-foreground text-xs sm:text-sm mt-1 mb-4 flex-grow leading-relaxed">
                   {project.description}
                 </p>
                 
@@ -228,12 +228,12 @@ export function Projects() {
       {/* Project Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
+          <div className="fixed inset-0 z-[300] flex items-center justify-center p-4 sm:p-6 isolate">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-background/80 backdrop-blur-sm"
+              className="absolute inset-0 z-[300] bg-background/80 backdrop-blur-sm"
               onClick={() => setSelectedProject(null)}
             />
             
@@ -241,7 +241,7 @@ export function Projects() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-3xl glass-card rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col max-h-[90vh]"
+              className="relative z-[310] w-full max-w-3xl glass-card rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col max-h-[90vh]"
             >
               <button 
                 onClick={() => setSelectedProject(null)}
@@ -251,7 +251,7 @@ export function Projects() {
               </button>
 
               <div className="h-64 sm:h-80 relative shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e27] to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10" />
                 {getProjectThumbnail(selectedProject) ? (
                   <img
                     src={getProjectThumbnail(selectedProject) as string}
@@ -263,7 +263,7 @@ export function Projects() {
                 )}
               </div>
 
-              <div className="p-6 sm:p-8 flex-grow overflow-y-auto relative z-20 bg-[#0a0e27]">
+              <div className="p-6 sm:p-8 flex-grow overflow-y-auto relative z-20 bg-card">
                 <h2 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-4">
                   {selectedProject.title}
                 </h2>
@@ -280,8 +280,8 @@ export function Projects() {
                   ))}
                 </div>
 
-                <div className="prose prose-invert max-w-none">
-                  <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                <div className="prose prose-invert max-w-none mt-2">
+                  <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                     {selectedProject.longDescription}
                   </p>
                 </div>

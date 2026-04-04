@@ -67,21 +67,12 @@ pnpm install
 
 ### Configure Contact Form Email (Nodemailer)
 
-Create a local env file and set your form endpoint:
+Create a `.env.local` file in the project root:
 
-```bash
-cp .env.example .env
-```
-
-Then configure SMTP values (example for Gmail):
-
-```bash
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=465
-SMTP_USER=yourgmail@gmail.com
-SMTP_PASS=your_gmail_app_password
-CONTACT_TO_EMAIL=mdjahidulislamsarker@gmail.com
-CONTACT_FROM_EMAIL=yourgmail@gmail.com
+```env
+EMAIL_USER=your_gmail_address
+EMAIL_PASS=your_gmail_app_password
+EMAIL_TO=your_destination_email
 ```
 
 Notes:
@@ -116,10 +107,20 @@ pnpm build
 pnpm preview
 ```
 
+## Deploy to Vercel
+
+1. Push this repository to GitHub.
+2. Go to https://vercel.com and import the GitHub repo.
+3. Set environment variables in Vercel:
+  - `EMAIL_USER`
+  - `EMAIL_PASS`
+  - `EMAIL_TO`
+4. Deploy.
+
 ## Notes
 
 - The contact form sends data to `/api/contact` from `src/sections/Contact.tsx`.
-- In Vercel, add SMTP variables in Project Settings -> Environment Variables before deploying.
+- In Vercel, add `EMAIL_USER`, `EMAIL_PASS`, and `EMAIL_TO` in Project Settings -> Environment Variables before deploying.
 - The resume link in the hero section points to `public/Resume.pdf`.
 
 ## Customization

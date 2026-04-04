@@ -4,7 +4,6 @@ import { Github, Linkedin, Terminal, Download, ArrowRight, Code } from "lucide-r
 import { Button } from "@/components/ui/button";
 
 const TITLES = [
-  "Software Engineer",
   "Full Stack Developer",
   "Problem Solver",
   "Tech Enthusiast",
@@ -17,10 +16,11 @@ const CODE_SNIPPET = `const developer = {
   passion: 'Building solutions',
   code: () => 'Clean & Efficient'
 };
-// Let's build something amazing! 🚀`;
+// Let's build something amazing! `;
 
 export function Hero() {
   const [titleIndex, setTitleIndex] = useState(0);
+  const resumeHref = `${import.meta.env.BASE_URL}Resume.pdf`;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -92,22 +92,43 @@ export function Hero() {
               Get In Touch
             </Button>
             <Button size="lg" variant="glass" asChild>
-              <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={resumeHref} target="_blank" rel="noopener noreferrer">
                 <Download className="w-4 h-4 mr-2" /> Resume
               </a>
             </Button>
           </div>
 
           <div className="flex items-center gap-6 pt-4">
-            <div className="flex gap-4">
-              <a href="https://github.com/Jahidul183019" target="_blank" rel="noreferrer" className="p-3 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+              <a href="https://github.com/Jahidul183019" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="https://www.linkedin.com/in/md-jahidul-islam-231879321" target="_blank" rel="noreferrer" className="p-3 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all">
+              <a href="https://www.linkedin.com/in/md-jahidul-islam-231879321" target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://leetcode.com/u/Jahidul1/" target="_blank" rel="noreferrer" className="p-3 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center font-display font-bold text-sm">
-                LC
+              <a href="https://leetcode.com/u/Jahidul1/" target="_blank" rel="noreferrer" aria-label="LeetCode" className="w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0">
+                <img
+                  src="https://leetcode.com/favicon.ico"
+                  alt="LeetCode"
+                  className="w-5 h-5 rounded-sm"
+                  loading="lazy"
+                />
+              </a>
+              <a href="https://codeforces.com/profile/Jahidul1" target="_blank" rel="noreferrer" aria-label="Codeforces" className="w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0">
+                <img
+                  src="https://codeforces.org/s/0/favicon-32x32.png"
+                  alt="Codeforces"
+                  className="w-5 h-5 rounded-sm"
+                  loading="lazy"
+                />
+              </a>
+              <a href="https://www.codechef.com/users/jahidul1" target="_blank" rel="noreferrer" aria-label="CodeChef" className="w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0">
+                <img
+                  src="https://cdn.codechef.com/favicon.ico"
+                  alt="CodeChef"
+                  className="w-5 h-5 rounded-sm"
+                  loading="lazy"
+                />
               </a>
             </div>
             
@@ -131,30 +152,30 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9, rotateX: 10 }}
           animate={{ opacity: 1, scale: 1, rotateX: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative hidden lg:block perspective-1000"
+          className="relative perspective-1000 max-w-xl mx-auto w-full lg:max-w-none"
           style={{ transformStyle: "preserve-3d" }}
         >
-          <div className="glass-card rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative z-10 group hover:-translate-y-2 hover:rotate-x-2 hover:rotate-y-[-2deg] transition-all duration-500">
+          <div className="glass-card rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 shadow-2xl relative z-10 group hover:-translate-y-2 hover:rotate-x-2 hover:rotate-y-[-2deg] transition-all duration-500">
             {/* Window Controls */}
-            <div className="bg-background/50 px-4 py-3 border-b border-white/5 flex items-center gap-2">
+            <div className="bg-background/70 px-4 py-3 border-b border-black/10 dark:border-white/5 flex items-center gap-2">
               <div className="w-3 h-3 rounded-full bg-red-500/80" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
               <div className="w-3 h-3 rounded-full bg-green-500/80" />
               <div className="flex-1 text-center text-xs font-mono text-muted-foreground mr-8">
-                developer.js
+                portfolio.js
               </div>
             </div>
             {/* Code */}
-            <div className="p-6 bg-[#0d1117] font-mono text-sm leading-loose">
-              <pre className="text-gray-300">
+            <div className="p-4 sm:p-6 bg-card font-mono text-xs sm:text-sm leading-relaxed sm:leading-loose overflow-x-auto">
+              <pre className="text-card-foreground">
                 <code dangerouslySetInnerHTML={{
                   __html: CODE_SNIPPET
-                    .replace(/const developer/g, '<span class="text-purple-400">const</span> <span class="text-blue-400">developer</span>')
-                    .replace(/name:|role:|skills:|passion:|code:/g, match => `<span class="text-cyan-400">${match}</span>`)
-                    .replace(/'Jahidul Islam'|'Software Engineer'|'C'|'C\+\+'|'Java'|'Python'|'Building solutions'|'Clean & Efficient'/g, match => `<span class="text-green-400">${match}</span>`)
-                    .replace(/true/g, '<span class="text-orange-400">true</span>')
-                    .replace(/function/g, '<span class="text-purple-400">function</span>')
-                    .replace(/return/g, '<span class="text-purple-400">return</span>')
+                    .replace(/const developer/g, '<span class="text-violet-500">const</span> <span class="text-sky-500">developer</span>')
+                    .replace(/name:|role:|skills:|passion:|code:/g, match => `<span class="text-cyan-500">${match}</span>`)
+                    .replace(/'Jahidul Islam'|'Software Engineer'|'C'|'C\+\+'|'Java'|'Python'|'Building solutions'|'Clean & Efficient'/g, match => `<span class="text-emerald-500">${match}</span>`)
+                    .replace(/true/g, '<span class="text-amber-500">true</span>')
+                    .replace(/function/g, '<span class="text-violet-500">function</span>')
+                    .replace(/return/g, '<span class="text-violet-500">return</span>')
                 }} />
               </pre>
             </div>
