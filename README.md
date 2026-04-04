@@ -9,6 +9,7 @@ This project showcases:
 - Contact section with client-side form validation
 - Animated starfield background and custom cursor
 - Responsive navigation with scroll spy and theme toggle
+- Route-aware single-page navigation (`/`, `/about`, `/projects`, `/contact`)
 
 ## Tech Stack
 
@@ -80,6 +81,22 @@ Notes:
 - By default, frontend form submits to `/api/contact`.
 - `VITE_CONTACT_FORM_ENDPOINT` is optional and only needed if you want an external endpoint.
 
+Optional SMTP variables supported by `api/contact.js`:
+
+```env
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_USER=your_smtp_user
+SMTP_PASS=your_smtp_password
+CONTACT_TO_EMAIL=your_destination_email
+CONTACT_FROM_EMAIL=optional_from_email
+```
+
+If these are not provided, fallback keys are used:
+- `EMAIL_USER`
+- `EMAIL_PASS`
+- `EMAIL_TO`
+
 ### Run Development Server
 
 ```bash
@@ -122,6 +139,8 @@ pnpm preview
 - The contact form sends data to `/api/contact` from `src/sections/Contact.tsx`.
 - In Vercel, add `EMAIL_USER`, `EMAIL_PASS`, and `EMAIL_TO` in Project Settings -> Environment Variables before deploying.
 - The resume link in the hero section points to `public/Resume.pdf`.
+- `pnpm-workspace.yaml` includes `onlyBuiltDependencies: [esbuild]` to avoid ignored build script warnings on pnpm v10.
+- Route rewrites in `vercel.json` ensure direct visits to `/about`, `/projects`, and `/contact` load the SPA correctly.
 
 ## Customization
 
