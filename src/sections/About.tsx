@@ -73,14 +73,13 @@ export function About() {
             <div className="relative z-10 w-32 h-32 mx-auto mt-4 mb-6 rounded-full p-1 bg-gradient-to-tr from-primary to-secondary">
               <div className="w-full h-full rounded-full overflow-hidden bg-background relative">
                 <img 
-                  src="/me.jpeg" 
+                  src={`${import.meta.env.BASE_URL}images/avatar.jpeg`}
                   onError={(e) => {
-                    e.currentTarget.src = `${import.meta.env.BASE_URL}images/avatar.jpeg`;
+                    e.currentTarget.src = "/me.jpeg";
                   }}
                   alt="MD. Jahidul Islam" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute bottom-2 right-2 w-4 h-4 bg-green-500 border-2 border-background rounded-full" title="Online" />
               </div>
             </div>
 
