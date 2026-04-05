@@ -84,7 +84,6 @@ export function About() {
             </div>
 
             <h3 className="text-xl font-bold text-foreground">MD. Jahidul Islam</h3>
-            <p className="text-primary font-medium mt-1 mb-4">Aspiring Software Engineer</p>
             
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               I'm a Computer Science student at the University of Dhaka with a deep passion for software engineering.
