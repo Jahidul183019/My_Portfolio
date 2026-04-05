@@ -172,7 +172,7 @@ export function Hero() {
                   __html: CODE_SNIPPET
                     .replace(/const developer/g, '<span class="text-violet-500">const</span> <span class="text-sky-500">developer</span>')
                     .replace(/name:|role:|skills:|passion:|code:/g, match => `<span class="text-cyan-500">${match}</span>`)
-                    .replace(/'Jahidul Islam'|'Software Engineer'|'C'|'C\+\+'|'Java'|'Python'|'Building solutions'|'Clean & Efficient'/g, match => `<span class="text-emerald-500">${match}</span>`)
+                    .replace(/'Jahidul Islam'|'Student'|'C'|'C\+\+'|'Java'|'Python'|'Building solutions'|'Clean & Efficient'/g, match => `<span class="text-emerald-500">${match}</span>`)
                     .replace(/true/g, '<span class="text-amber-500">true</span>')
                     .replace(/function/g, '<span class="text-violet-500">function</span>')
                     .replace(/return/g, '<span class="text-violet-500">return</span>')
