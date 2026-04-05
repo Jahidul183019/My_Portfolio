@@ -11,7 +11,7 @@ const TITLES = [
 
 const CODE_SNIPPET = `const developer = {
   name: 'Jahidul Islam',
-  role: 'Software Engineer',
+  role: 'Student',
   skills: ['C', 'C++', 'Java', 'Python'],
   passion: 'Building solutions',
   code: () => 'Clean & Efficient'
