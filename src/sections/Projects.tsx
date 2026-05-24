@@ -76,6 +76,20 @@ const PROJECTS: Project[] = [
       { label: "Code", href: "https://github.com/Jahidul183019/DSA", kind: "github" },
     ],
   },
+  {
+    id: 5,
+    title: "ShareBox",
+    description: "Ephemeral real-time sharing app to exchange text, code, images and videos via rooms.",
+    longDescription: "ShareBox is an ephemeral sharing app: create a room, hand someone the 6-character code, and exchange text, code snippets, images, and videos in real time. It combines a Vite/React frontend with a FastAPI backend and WebSocket-powered rooms; easy to run locally or deploy to Render.",
+    category: "Web App",
+    technologies: ["React", "Vite", "FastAPI", "WebSockets", "Python"],
+    thumbnail: "https://raw.githubusercontent.com/Jahidul183019/ShareBox/main/frontend/public/icon.svg",
+    featured: false,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/ShareBox", kind: "github" },
+      { label: "Demo", href: "https://share-box-blush.vercel.app/", kind: "demo" },
+    ],
+  },
 ];
 
 export function Projects() {
@@ -175,7 +189,7 @@ export function Projects() {
                   <img
                     src={getProjectThumbnail(project) as string}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="max-w-full max-h-full object-contain mx-auto transition-transform duration-300"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 via-secondary/20 to-background flex items-end p-5">
@@ -250,13 +264,13 @@ export function Projects() {
                 <X className="w-5 h-5" />
               </button>
 
-              <div className="h-64 sm:h-80 relative shrink-0">
+              <div className="h-64 sm:h-80 relative shrink-0 flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10" />
                 {getProjectThumbnail(selectedProject) ? (
                   <img
                     src={getProjectThumbnail(selectedProject) as string}
                     alt={selectedProject.title}
-                    className="w-full h-full object-cover"
+                    className="max-w-full max-h-full object-contain mx-auto"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 via-secondary/20 to-background" />
