@@ -54,14 +54,14 @@ const ACHIEVEMENTS = [
   {
     title: "21st out of 702 teams",
     competition: "Ramadan CTF 2026",
-    institution: "DU_CyberPhantoms",
-    project: "Web Exploitation, Crypto, RevEng"
+    institution: "DU CyberPhantoms",
+    project: "Web, Crypto, RevEng"
   },
   {
     title: "52nd Place",
     competition: "Al Khwarizmi CTF 2025",
-    institution: "DU_CyberPhantoms",
-    project: "Web Exploitation & Crypto"
+    institution: "DU CyberPhantoms",
+    project: "Web & Crypto"
   }
 ];
 
@@ -130,9 +130,12 @@ export function About() {
               </h4>
               <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
                 {EDUCATION.map((edu, i) => (
-                  <div key={i} className={`relative flex items-center justify-between md:justify-normal ${i % 2 === 0 ? 'md:flex-row-reverse' : ''} group is-active`}>
-                    <div className={`flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-primary shadow shrink-0 md:order-1 ${i % 2 === 0 ? 'md:-translate-x-1/2' : 'md:translate-x-1/2'} ${edu.status === 'active' ? 'animate-pulse' : ''}`} />
-                    <div className="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] glass-card p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors">
+                  <div key={i} className="relative flex items-center w-full group is-active">
+                    {/* Timeline Dot */}
+                    <div className={`absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-primary shadow z-10 ${edu.status === 'active' ? 'animate-pulse' : ''}`} />
+                    
+                    {/* Card */}
+                    <div className={`w-[calc(100%-2rem)] ml-auto md:w-[calc(50%-1.5rem)] ${i % 2 === 0 ? 'md:ml-0 md:mr-auto' : 'md:ml-auto md:mr-0'} glass-card p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors`}>
                       <div className="text-xs text-primary mb-1">{edu.year}</div>
                       <div className="font-semibold text-foreground text-sm">{edu.degree}</div>
                       <div className="text-xs text-muted-foreground mt-1">{edu.institution}</div>
@@ -149,9 +152,12 @@ export function About() {
               </h4>
               <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
                 {ACHIEVEMENTS.map((ach, i) => (
-                  <div key={i} className={`relative flex items-center justify-between md:justify-normal ${i % 2 === 0 ? 'md:flex-row-reverse' : ''} group is-active`}>
-                    <div className={`flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-yellow-500 shadow shrink-0 md:order-1 ${i % 2 === 0 ? 'md:-translate-x-1/2' : 'md:translate-x-1/2'}`} />
-                    <div className="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] glass-card p-4 rounded-xl border border-white/5 hover:border-yellow-500/30 transition-colors">
+                  <div key={i} className="relative flex items-center w-full group is-active">
+                    {/* Timeline Dot */}
+                    <div className="absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-yellow-500 shadow z-10" />
+                    
+                    {/* Card */}
+                    <div className={`w-[calc(100%-2rem)] ml-auto md:w-[calc(50%-1.5rem)] ${i % 2 === 0 ? 'md:ml-0 md:mr-auto' : 'md:ml-auto md:mr-0'} glass-card p-4 rounded-xl border border-white/5 hover:border-yellow-500/30 transition-colors`}>
                       <div className="text-xs text-yellow-500 mb-1">{ach.competition}</div>
                       <div className="font-semibold text-foreground text-sm">{ach.title}</div>
                       <div className="text-xs text-muted-foreground mt-1">{ach.project} • {ach.institution}</div>
