@@ -90,6 +90,21 @@ const PROJECTS: Project[] = [
       { label: "Demo", href: "https://share-box-blush.vercel.app/", kind: "demo" },
     ],
   },
+  {
+    id: 6,
+    title: "PoishaGo",
+    description: "Full-stack Mobile Financial Service (digital wallet) platform with fraud detection, loyalty rewards, and live support.",
+    longDescription: "PoishaGo is a full-stack, state-of-the-art Mobile Financial Service (MFS) application engineered to deliver secure, lightning-fast digital banking experiences. Built with a React dashboard and FastAPI backend sharing one PostgreSQL source of truth, it features peer-to-peer transfers, merchant payments, utility bill processing, agent banking, a real-time fraud detection engine with 5 configurable rules, tiered loyalty rewards (Bronze → Platinum), 4-role admin RBAC, dual-factor money movement (PIN + email OTP), festival cashback campaigns, and WebSocket-powered live support chat — all deployed on Vercel, Render, and Supabase.",
+    category: "Full Stack",
+    technologies: ["React", "FastAPI", "PostgreSQL", "WebSockets", "JWT", "Supabase", "Vercel"],
+    thumbnail: "project-6.png",
+    featured: true,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/PoishaGo", kind: "github" },
+      { label: "Demo", href: "https://poisha-go.vercel.app", kind: "demo" },
+      { label: "Video", href: "https://youtu.be/awSXqrr5GCM?si=JjkWrgGme4-V84wp", kind: "demo" },
+    ],
+  },
 ];
 
 export function Projects() {
