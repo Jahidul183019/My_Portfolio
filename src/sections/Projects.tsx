@@ -40,8 +40,8 @@ const PROJECTS: Project[] = [
   {
     id: 2,
     title: "MediMart JavaFX",
-    description: "Academic pharmacy management system built for desktop workflows and structured inventory handling.",
-    longDescription: "An academic pharmacy management system built with JavaFX and SQLite. The project demonstrates desktop application design, sockets, multithreading, and object-oriented programming while solving core store management tasks.",
+    description: "Object Oriented Design and Programming Lab academic pharmacy management system built for desktop workflows and structured inventory handling.",
+    longDescription: "An academic pharmacy management system built with JavaFX and SQLite for the Object Oriented Design and Programming Lab course. The project demonstrates desktop application design, sockets, multithreading, and object-oriented programming while solving core store management tasks.",
     category: "Academic",
     technologies: ["Java", "JavaFX", "SQLite", "Sockets", "Multithreading", "OOP"],
     featured: true,
@@ -53,8 +53,8 @@ const PROJECTS: Project[] = [
   {
     id: 3,
     title: "Escape Room Conquest",
-    description: "Multi-level escape room game focused on puzzle solving, AI behavior, and interactive game logic.",
-    longDescription: "A multi-level escape room game built with C++ and SDL2. It includes an AI system, game logic, and graphics work to create an interactive academic game project with layered challenges.",
+    description: "Structured Programming Course multi-level escape room game focused on puzzle solving, AI behavior, and interactive game logic.",
+    longDescription: "A multi-level escape room game built with C++ and SDL2 for the Structured Programming Course. It includes an AI system, game logic, and graphics work to create an interactive academic game project with layered challenges.",
     category: "Academic",
     technologies: ["C++", "SDL2", "AI System", "Game Logic", "Graphics"],
     featured: false,
@@ -93,9 +93,9 @@ const PROJECTS: Project[] = [
   {
     id: 6,
     title: "PoishaGo",
-    description: "Full-stack Mobile Financial Service (digital wallet) platform with fraud detection, loyalty rewards, and live support.",
-    longDescription: "PoishaGo is a full-stack, state-of-the-art Mobile Financial Service (MFS) application engineered to deliver secure, lightning-fast digital banking experiences. Built with a React dashboard and FastAPI backend sharing one PostgreSQL source of truth, it features peer-to-peer transfers, merchant payments, utility bill processing, agent banking, a real-time fraud detection engine with 5 configurable rules, tiered loyalty rewards (Bronze → Platinum), 4-role admin RBAC, dual-factor money movement (PIN + email OTP), festival cashback campaigns, and WebSocket-powered live support chat — all deployed on Vercel, Render, and Supabase.",
-    category: "Full Stack",
+    description: "DBMS Lab Full-stack Mobile Financial Service platform with fraud detection, loyalty rewards, and live support.",
+    longDescription: "PoishaGo is a full-stack, state-of-the-art Mobile Financial Service (MFS) application engineered for the Database Management Systems (DBMS) Lab course. Built with a React dashboard and FastAPI backend sharing one PostgreSQL source of truth, it features peer-to-peer transfers, merchant payments, utility bill processing, agent banking, a real-time fraud detection engine with 5 configurable rules, tiered loyalty rewards (Bronze → Platinum), 4-role admin RBAC, dual-factor money movement (PIN + email OTP), festival cashback campaigns, and WebSocket-powered live support chat — all deployed on Vercel, Render, and Supabase.",
+    category: "Academic",
     technologies: ["React", "FastAPI", "PostgreSQL", "WebSockets", "JWT", "Supabase", "Vercel"],
     thumbnail: "project-6.png",
     featured: true,
@@ -105,10 +105,110 @@ const PROJECTS: Project[] = [
       { label: "Video", href: "https://youtu.be/awSXqrr5GCM?si=JjkWrgGme4-V84wp", kind: "demo" },
     ],
   },
+  {
+    id: 7,
+    title: "VitalsCare",
+    description: "AI-powered community health risk radar for non-communicable disease screening in underserved communities.",
+    longDescription: "VitalsCare is an AI-powered HealthTech platform for non-communicable disease screening in rural and underserved communities, built for THE INFINITY AI BUILDFEST 2026 at Brac University. It combines XGBoost ML models (hypertension, diabetes, CVD, malnutrition risk scoring), a RAG pipeline grounded in WHO and Bangladesh DGHS clinical guidelines, a knowledge graph for multi-morbidity interaction detection, and Gemini LLM for personalized recommendations — all wrapped in a bilingual (English & Bengali) React dashboard with real-time conversational Health Agent and PDF report generation.",
+    category: "Hackathon",
+    technologies: ["React", "FastAPI", "XGBoost", "Gemini", "RAG", "Knowledge Graph", "Vite"],
+    thumbnail: "project-7.png",
+    featured: true,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/VitalsCare", kind: "github" },
+      { label: "Demo", href: "https://health-risk-radar.vercel.app", kind: "demo" },
+    ],
+  },
+  {
+    id: 8,
+    title: "QueueStorm",
+    description: "AI-powered support-ticket analysis API for digital finance platforms with hybrid rule + LLM architecture.",
+    longDescription: "QueueStorm is an AI-powered support-ticket analysis API for digital finance platforms. It classifies complaints, cross-references transaction evidence, and generates structured responses for routing and resolution. Built with a hybrid 9-step pipeline: rule-based language detection, prompt injection pre-screening, evidence extraction, case classification, and safety filtering — with Groq API (Llama 3.3 70B) handling only natural language text generation. Dockerized and production-ready.",
+    category: "Hackathon",
+    technologies: ["Python", "FastAPI", "Groq API", "Llama 3", "Docker"],
+    featured: false,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/QueueStorm", kind: "github" },
+    ],
+  },
+  {
+    id: 10,
+    title: "CoWork — Room Booking API",
+    description: "Multi-tenant coworking space room booking REST API with JWT auth, dynamic pricing, and concurrency handling.",
+    longDescription: "A REST API for managing bookable rooms inside a coworking space across multiple tenant organizations. Built for the ICT Fest Hackathon with FastAPI + SQLite + JWT auth + Docker. Features multi-tenant isolation, robust concurrency handling against double-booking and quota violations, tiered refund logic based on cancellation notice period, rate-limited endpoints, comprehensive date-range usage reports, and CSV export. Zero-config SQLite database with automatic schema provisioning.",
+    category: "Hackathon",
+    technologies: ["Python", "FastAPI", "SQLite", "JWT", "Docker", "Pytest"],
+    featured: false,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/ICT_Fest_Hackathon_Preliminary", kind: "github" },
+    ],
+  },
+  {
+    id: 11,
+    title: "STM-32 Labs",
+    description: "Step-by-step STM32 labs for NUCLEO-F446RE covering both HAL and bare-metal embedded programming.",
+    longDescription: "A collection of step-by-step STM32 labs for the NUCLEO-F446RE board. Covers both HAL-based programming (using STM32CubeMX code generation and STM32CubeIDE) and bare-metal programming (direct register manipulation without HAL). Includes assignments on GPIO, timers, interrupts, UART, and more with detailed setup instructions for macOS and Windows.",
+    category: "Embedded",
+    technologies: ["C", "STM32", "ARM Cortex-M4", "HAL", "Bare Metal"],
+    featured: false,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/STM-32", kind: "github" },
+    ],
+  },
+  {
+    id: 12,
+    title: "Vantage Robotics",
+    description: "High-performance 3D digital twin of a 6-DOF robotic arm with IK solver and voice command copilot.",
+    longDescription: "A high-performance digital twin and 3D simulation suite for a 6-DOF robotic arm, built for the IUT Techathon Final Round. Features real-time WebGL visualization using Three.js and React Three Fiber at 60 FPS, a Coordinate Descent Inverse Kinematics solver, 2cm path interpolation for smooth joint transitions, a voice copilot integrating Web Speech API with Groq LLM (Llama 3.1) for natural language commands, and a Wokwi ESP32/Arduino circuit simulation for hardware integration.",
+    category: "Hackathon",
+    technologies: ["TypeScript", "React", "Three.js", "Zustand", "Groq API", "Wokwi"],
+    thumbnail: "project-12.jpg",
+    featured: true,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/IUT_TECHATHON_FINAL", kind: "github" },
+      { label: "Demo", href: "https://techrun-topaz.vercel.app/", kind: "demo" },
+      { label: "Wokwi", href: "https://wokwi.com/projects/469130364647577601", kind: "demo" },
+    ],
+  },
+  {
+    id: 13,
+    title: "Smart Office IoT Monitor",
+    description: "Real-time smart office energy and device-monitoring platform with dashboard, Discord bot, and IoT simulation.",
+    longDescription: "A real-time smart office energy and device-monitoring platform built for the IUT Techathon preliminary round. Features a FastAPI backend with shared in-memory device store, React dashboard with WebSocket live updates, and a Discord operations bot — all sharing one live IoT state. Simulates 15 devices across 3 rooms with time-of-day bias, automated after-hours alerts, power insight analytics, and a Wokwi ESP32 hardware circuit simulation. Deployed on Render.",
+    category: "Hackathon",
+    technologies: ["React", "FastAPI", "WebSockets", "Discord.js", "Wokwi", "Vite"],
+    thumbnail: "project-13.png",
+    featured: false,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/Techathon2026-DU_AlgoArchitects", kind: "github" },
+      { label: "Dashboard", href: "https://iot-smart-home-dashboard.onrender.com", kind: "demo" },
+      { label: "Wokwi", href: "https://wokwi.com/projects/468536088941998081", kind: "demo" },
+    ],
+  },
+  {
+    id: 14,
+    title: "Guessing Number Game",
+    description: "A simple Java guessing game — first project practicing core Java fundamentals and logic building.",
+    longDescription: "A simple Java project — a Guessing Number Game designed to practice Java programming, problem-solving, and logic-building skills. The computer randomly selects a number, the player guesses with high/low feedback, and the game tracks attempts. Demonstrates Java syntax fundamentals, user input handling, conditional logic, loops, and random number generation.",
+    category: "Mock Project",
+    technologies: ["Java", "OOP"],
+    featured: false,
+    links: [
+      { label: "Code", href: "https://github.com/Jahidul183019/Guessing-Number-Game", kind: "github" },
+      { label: "Demo", href: "https://www.youtube.com/watch?v=xHvuDeWcaHk", kind: "demo" },
+    ],
+  },
 ];
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const categories = ["All", ...Array.from(new Set(PROJECTS.map((p) => p.category)))];
+
+  const filteredProjects = activeCategory === "All"
+    ? PROJECTS
+    : PROJECTS.filter((p) => p.category === activeCategory);
 
   const getYouTubeVideoId = (href: string) => {
     try {
@@ -187,8 +287,43 @@ export function Projects() {
           </p>
         </motion.div>
 
+        {/* Category Filter */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-wrap justify-center gap-3 mb-12"
+        >
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`
+                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300
+                border
+                ${activeCategory === cat
+                  ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/25"
+                  : "bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground"
+                }
+              `}
+            >
+              {cat}
+              <span className={`
+                ml-2 text-xs px-1.5 py-0.5 rounded-full
+                ${activeCategory === cat
+                  ? "bg-primary-foreground/20 text-primary-foreground"
+                  : "bg-white/10 text-muted-foreground"
+                }
+              `}>
+                {cat === "All" ? PROJECTS.length : PROJECTS.filter((p) => p.category === cat).length}
+              </span>
+            </button>
+          ))}
+        </motion.div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {PROJECTS.map((project, i) => (
+          <AnimatePresence mode="popLayout">
+          {filteredProjects.map((project, i) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
@@ -251,6 +386,7 @@ export function Projects() {
               </div>
             </motion.div>
           ))}
+          </AnimatePresence>
         </div>
       </div>
 

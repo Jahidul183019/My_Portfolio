@@ -12,7 +12,7 @@ const TITLES = [
 const CODE_SNIPPET = `const developer = {
   name: 'Jahidul Islam',
   role: 'Student',
-  skills: ['C', 'C++', 'Java', 'Python'],
+  skills: ['C', 'C++', 'Java', 'Python', 'JavaScript'],
   passion: 'Building solutions',
   code: () => 'Clean & Efficient'
 };
@@ -136,11 +136,11 @@ export function Hero() {
             
             <div className="hidden sm:flex gap-6 text-sm">
               <div>
-                <span className="block text-xl font-bold text-foreground">3+</span>
+                <span className="block text-xl font-bold text-foreground">10+</span>
                 <span className="text-muted-foreground">Projects</span>
               </div>
               <div>
-                <span className="block text-xl font-bold text-foreground">10+</span>
+                <span className="block text-xl font-bold text-foreground">20+</span>
                 <span className="text-muted-foreground">Technologies</span>
               </div>
             </div>
@@ -172,7 +172,7 @@ export function Hero() {
                   __html: CODE_SNIPPET
                     .replace(/const developer/g, '<span class="text-violet-500">const</span> <span class="text-sky-500">developer</span>')
                     .replace(/name:|role:|skills:|passion:|code:/g, match => `<span class="text-cyan-500">${match}</span>`)
-                    .replace(/'Jahidul Islam'|'Student'|'C'|'C\+\+'|'Java'|'Python'|'Building solutions'|'Clean & Efficient'/g, match => `<span class="text-emerald-500">${match}</span>`)
+                    .replace(/'Jahidul Islam'|'Student'|'C'|'C\+\+'|'Java'|'Python'|'JavaScript'|'Building solutions'|'Clean & Efficient'/g, match => `<span class="text-emerald-500">${match}</span>`)
                     .replace(/true/g, '<span class="text-amber-500">true</span>')
                     .replace(/function/g, '<span class="text-violet-500">function</span>')
                     .replace(/return/g, '<span class="text-violet-500">return</span>')

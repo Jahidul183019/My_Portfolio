@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BookOpen, Code2, Database, Layout, Server, Wrench } from "lucide-react";
+import { BookOpen, Code2, Database, Layout, Server, Wrench, Trophy } from "lucide-react";
 
 const SKILL_CATEGORIES = ["All", "Frontend", "Backend", "Programming", "Database", "Tools"];
 
@@ -8,12 +8,14 @@ const SKILLS = [
   { name: "React", category: "Frontend", icon: Layout },
   { name: "Vite", category: "Frontend", icon: Layout },
   { name: "JavaScript", category: "Frontend", icon: Code2 },
+  { name: "FastAPI", category: "Backend", icon: Server },
   { name: "Spring Boot", category: "Backend", icon: Server },
   { name: "Node.js", category: "Backend", icon: Server },
   { name: "C", category: "Programming", icon: Code2 },
   { name: "C++", category: "Programming", icon: Code2 },
   { name: "Java", category: "Programming", icon: Code2 },
   { name: "Python", category: "Programming", icon: Code2 },
+  { name: "PostgreSQL", category: "Database", icon: Database },
   { name: "MySQL", category: "Database", icon: Database },
   { name: "SQLite", category: "Database", icon: Database },
   { name: "Git", category: "Tools", icon: Wrench },
@@ -33,6 +35,33 @@ const EDUCATION = [
     institution: "Ispahani Public School & College",
     year: "Completed",
     status: "completed"
+  }
+];
+
+const ACHIEVEMENTS = [
+  {
+    title: "Finalist",
+    competition: "THE INFINITY AI BUILDFEST 2026",
+    institution: "Brac University",
+    project: "VitalsCare"
+  },
+  {
+    title: "Finalist",
+    competition: "IUT Techathon",
+    institution: "Islamic University of Technology",
+    project: "Vantage Robotics"
+  },
+  {
+    title: "21st out of 702 teams",
+    competition: "Ramadan CTF 2026",
+    institution: "DU_CyberPhantoms",
+    project: "Web Exploitation, Crypto, RevEng"
+  },
+  {
+    title: "52nd Place",
+    competition: "Al Khwarizmi CTF 2025",
+    institution: "DU_CyberPhantoms",
+    project: "Web Exploitation & Crypto"
   }
 ];
 
@@ -107,6 +136,25 @@ export function About() {
                       <div className="text-xs text-primary mb-1">{edu.year}</div>
                       <div className="font-semibold text-foreground text-sm">{edu.degree}</div>
                       <div className="text-xs text-muted-foreground mt-1">{edu.institution}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Achievements Timeline */}
+            <div className="text-left mt-8">
+              <h4 className="flex items-center gap-2 font-display font-semibold mb-4 text-foreground">
+                <Trophy className="w-5 h-5 text-yellow-500" /> Awards & Achievements
+              </h4>
+              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+                {ACHIEVEMENTS.map((ach, i) => (
+                  <div key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div className="flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-yellow-500 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2" />
+                    <div className="w-[calc(100%-2rem)] md:w-[calc(50%-1.5rem)] glass-card p-4 rounded-xl border border-white/5 hover:border-yellow-500/30 transition-colors">
+                      <div className="text-xs text-yellow-500 mb-1">{ach.competition}</div>
+                      <div className="font-semibold text-foreground text-sm">{ach.title}</div>
+                      <div className="text-xs text-muted-foreground mt-1">{ach.project} • {ach.institution}</div>
                     </div>
                   </div>
                 ))}
