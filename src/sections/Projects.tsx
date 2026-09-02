@@ -269,7 +269,7 @@ export function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 relative">
+    <section id="projects" className="py-16 sm:py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <motion.div
@@ -292,7 +292,7 @@ export function Projects() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-3 mb-12"
+          className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12"
         >
           {categories.map((cat) => (
             <button
@@ -321,7 +321,7 @@ export function Projects() {
           ))}
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           <AnimatePresence mode="popLayout">
           {filteredProjects.map((project, i) => (
             <motion.div
@@ -393,7 +393,7 @@ export function Projects() {
       {/* Project Modal */}
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-[300] flex items-center justify-center p-4 sm:p-6 isolate">
+          <div className="fixed inset-0 z-[300] flex items-end sm:items-center justify-center p-0 sm:p-6 isolate">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -406,7 +406,7 @@ export function Projects() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative z-[310] w-full max-w-3xl glass-card rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col max-h-[90vh]"
+              className="relative z-[310] w-full max-w-3xl glass-card rounded-t-2xl sm:rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col max-h-[95dvh] sm:max-h-[90vh]"
             >
               <button 
                 onClick={() => setSelectedProject(null)}
@@ -415,7 +415,7 @@ export function Projects() {
                 <X className="w-5 h-5" />
               </button>
 
-              <div className="h-64 sm:h-80 relative shrink-0 flex items-center justify-center">
+              <div className="h-48 sm:h-64 md:h-80 relative shrink-0 flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10" />
                 {getProjectThumbnail(selectedProject) ? (
                   <img

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BookOpen, Code2, Database, Layout, Server, Wrench, Trophy } from "lucide-react";
+import { BookOpen, Code2, Database, Layout, Server, Wrench } from "lucide-react";
 
 const SKILL_CATEGORIES = ["All", "Frontend", "Backend", "Programming", "Database", "Tools"];
 
@@ -38,32 +38,7 @@ const EDUCATION = [
   }
 ];
 
-const ACHIEVEMENTS = [
-  {
-    title: "Finalist",
-    competition: "THE INFINITY AI BUILDFEST 2026",
-    institution: "Brac University",
-    project: "VitalsCare"
-  },
-  {
-    title: "Finalist",
-    competition: "IUT Techathon",
-    institution: "Islamic University of Technology",
-    project: "Vantage Robotics"
-  },
-  {
-    title: "21st out of 702 teams",
-    competition: "Ramadan CTF 2026",
-    institution: "DU CyberPhantoms",
-    project: "Web, Crypto, RevEng"
-  },
-  {
-    title: "52nd Place",
-    competition: "Al Khwarizmi CTF 2025",
-    institution: "DU CyberPhantoms",
-    project: "Web & Crypto"
-  }
-];
+
 
 export function About() {
   const [activeTab, setActiveTab] = useState("All");
@@ -73,7 +48,7 @@ export function About() {
   );
 
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-16 sm:py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <motion.div
@@ -88,14 +63,14 @@ export function About() {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-[1fr_2fr] gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 lg:gap-12 items-start">
           
           {/* Profile Card */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-card rounded-3xl p-6 text-center relative overflow-hidden group"
+            className="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 text-center relative overflow-hidden group"
           >
             <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-br from-primary/20 to-secondary/20 z-0" />
             
@@ -145,27 +120,7 @@ export function About() {
               </div>
             </div>
 
-            {/* Achievements Timeline */}
-            <div className="text-left mt-8">
-              <h4 className="flex items-center gap-2 font-display font-semibold mb-4 text-foreground">
-                <Trophy className="w-5 h-5 text-yellow-500" /> Awards & Achievements
-              </h4>
-              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
-                {ACHIEVEMENTS.map((ach, i) => (
-                  <div key={i} className="relative flex items-center w-full group is-active">
-                    {/* Timeline Dot */}
-                    <div className="absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-yellow-500 shadow z-10" />
-                    
-                    {/* Card */}
-                    <div className={`w-[calc(100%-2rem)] ml-auto md:w-[calc(50%-1.5rem)] ${i % 2 === 0 ? 'md:ml-0 md:mr-auto' : 'md:ml-auto md:mr-0'} glass-card p-4 rounded-xl border border-white/5 hover:border-yellow-500/30 transition-colors`}>
-                      <div className="text-xs text-yellow-500 mb-1">{ach.competition}</div>
-                      <div className="font-semibold text-foreground text-sm">{ach.title}</div>
-                      <div className="text-xs text-muted-foreground mt-1">{ach.project} • {ach.institution}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+
           </motion.div>
 
           {/* Skills Section */}
@@ -190,10 +145,7 @@ export function About() {
               ))}
             </div>
 
-            <motion.div 
-              layout
-              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
-            >
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
               <AnimatePresence mode="popLayout">
                 {filteredSkills.map((skill) => {
                   const Icon = skill.icon;
@@ -217,7 +169,7 @@ export function About() {
                   );
                 })}
               </AnimatePresence>
-            </motion.div>
+            </div>
           </motion.div>
 
         </div>

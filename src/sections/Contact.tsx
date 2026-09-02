@@ -101,7 +101,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contact" className="py-16 sm:py-24 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-1/2 left-0 w-full h-[500px] bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none -skew-y-6 transform-gpu" />
 
@@ -122,13 +122,13 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-12">
           {/* LEFT SIDE */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 glass-card rounded-2xl p-8"
+            className="lg:col-span-2 glass-card rounded-2xl p-6 sm:p-8"
           >
             <h3 className="text-2xl font-bold mb-6">
               Contact Information
@@ -190,7 +190,7 @@ export function Contact() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-3 glass-card rounded-2xl p-8"
+            className="lg:col-span-3 glass-card rounded-2xl p-6 sm:p-8"
           >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Name */}

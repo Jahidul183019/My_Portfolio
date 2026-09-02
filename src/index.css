@@ -94,8 +94,16 @@
     @apply bg-card/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
   }
 
+  .light .glass-card {
+    @apply bg-white/80 border-black/5 shadow-[0_8px_32px_0_rgba(0,0,0,0.08)];
+  }
+
   .glass-nav {
     @apply bg-background/70 backdrop-blur-md border-b border-white/5 shadow-sm;
+  }
+
+  .light .glass-nav {
+    @apply bg-white/80 border-b border-black/5;
   }
 
   .text-gradient {

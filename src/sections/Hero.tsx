@@ -34,12 +34,12 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="min-h-screen pt-24 pb-12 flex items-center relative overflow-hidden">
+    <section id="home" className="min-h-[100dvh] pt-20 sm:pt-24 pb-12 flex items-center relative overflow-hidden">
       {/* Background Decorative Shapes */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -58,13 +58,13 @@ export function Hero() {
               <span>Hello, I'm</span>
             </motion.div>
             
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
               <span className="block text-foreground">MD. Jahidul</span>
               <span className="text-gradient">Islam</span>
             </h1>
 
-            <div className="h-10 sm:h-12 flex items-center">
-              <span className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-medium">
+            <div className="h-10 sm:h-12 flex items-center flex-wrap">
+              <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium">
                 I am a{" "}
               </span>
               <motion.span
@@ -72,7 +72,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="ml-2 text-xl sm:text-2xl lg:text-3xl font-display font-semibold text-foreground"
+                className="ml-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold text-foreground"
               >
                 {TITLES[titleIndex]}
               </motion.span>
@@ -152,7 +152,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9, rotateX: 10 }}
           animate={{ opacity: 1, scale: 1, rotateX: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative perspective-1000 max-w-xl mx-auto w-full lg:max-w-none"
+          className="relative perspective-1000 max-w-xl mx-auto w-full lg:max-w-none min-w-0"
           style={{ transformStyle: "preserve-3d" }}
         >
           <div className="glass-card rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 shadow-2xl relative z-10 group hover:-translate-y-2 hover:rotate-x-2 hover:rotate-y-[-2deg] transition-all duration-500">
@@ -166,7 +166,7 @@ export function Hero() {
               </div>
             </div>
             {/* Code */}
-            <div className="p-4 sm:p-6 bg-card font-mono text-xs sm:text-sm leading-relaxed sm:leading-loose overflow-x-auto">
+            <div className="p-3 sm:p-4 md:p-6 bg-card font-mono text-[11px] sm:text-xs md:text-sm leading-relaxed sm:leading-loose overflow-x-auto">
               <pre className="text-card-foreground">
                 <code dangerouslySetInnerHTML={{
                   __html: CODE_SNIPPET
