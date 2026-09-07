@@ -126,8 +126,8 @@ const PROJECTS: Project[] = [
   {
     id: 8,
     title: "QueueStorm",
-    description: "AI-powered support-ticket analysis API for digital finance platforms with hybrid rule + LLM architecture.",
-    longDescription: "QueueStorm is an AI-powered support-ticket analysis API for digital finance platforms. It classifies complaints, cross-references transaction evidence, and generates structured responses for routing and resolution. Built with a hybrid 9-step pipeline: rule-based language detection, prompt injection pre-screening, evidence extraction, case classification, and safety filtering — with Groq API (Llama 3.3 70B) handling only natural language text generation. Dockerized and production-ready.",
+    description: "SUST Preli Round project: AI-powered support-ticket analysis API for digital finance platforms with hybrid rule + LLM architecture.",
+    longDescription: "QueueStorm was built for the SUST Preli Round. It is an AI-powered support-ticket analysis API for digital finance platforms that classifies complaints, cross-references transaction evidence, and generates structured responses for routing and resolution. Built with a hybrid 9-step pipeline: rule-based language detection, prompt injection pre-screening, evidence extraction, case classification, and safety filtering — with Groq API (Llama 3.3 70B) handling only natural language text generation. Dockerized and production-ready.",
     category: "Hackathon",
     technologies: ["Python", "FastAPI", "Groq API", "Llama 3", "Docker"],
     featured: false,
