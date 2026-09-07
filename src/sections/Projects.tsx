@@ -138,8 +138,8 @@ const PROJECTS: Project[] = [
   {
     id: 10,
     title: "CoWork — Room Booking API",
-    description: "Multi-tenant coworking space room booking REST API with JWT auth, dynamic pricing, and concurrency handling.",
-    longDescription: "A REST API for managing bookable rooms inside a coworking space across multiple tenant organizations. Built for the ICT Fest Hackathon with FastAPI + SQLite + JWT auth + Docker. Features multi-tenant isolation, robust concurrency handling against double-booking and quota violations, tiered refund logic based on cancellation notice period, rate-limited endpoints, comprehensive date-range usage reports, and CSV export. Zero-config SQLite database with automatic schema provisioning.",
+    description: "IUT CSE FEST Preliminary 2026 project: multi-tenant coworking space room booking REST API with JWT auth, dynamic pricing, and concurrency handling.",
+    longDescription: "A REST API for managing bookable rooms inside a coworking space across multiple tenant organizations, built for IUT CSE FEST Preliminary 2026 with FastAPI + SQLite + JWT auth + Docker. Features multi-tenant isolation, robust concurrency handling against double-booking and quota violations, tiered refund logic based on cancellation notice period, rate-limited endpoints, comprehensive date-range usage reports, and CSV export. Zero-config SQLite database with automatic schema provisioning.",
     category: "Hackathon",
     technologies: ["Python", "FastAPI", "SQLite", "JWT", "Docker", "Pytest"],
     featured: false,
