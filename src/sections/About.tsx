@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@/hooks/use-media-query";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BookOpen, Code2, Database, Layout, Server, Wrench } from "lucide-react";
@@ -41,6 +42,8 @@ const EDUCATION = [
 
 
 export function About() {
+  const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
+  const [avatarFailed, setAvatarFailed] = useState(false);
   const [activeTab, setActiveTab] = useState("All");
 
   const filteredSkills = SKILLS.filter(
@@ -48,14 +51,16 @@ export function About() {
   );
 
   return (
-    <section id="about" className="py-16 sm:py-24 relative">
+    <section id="about" className="py-16 sm:py-24 relative overflow-x-clip">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={reducedMotion ? false : { opacity: 0, y: 20 }}
+          animate={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : undefined}
+          whileInView={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : { opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
+          transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
         >
           <h2 className="text-3xl md:text-4xl font-display font-bold inline-block relative">
             About <span className="text-gradient">Me</span>
@@ -67,23 +72,31 @@ export function About() {
           
           {/* Profile Card */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={reducedMotion ? false : { opacity: 0, x: -30 }}
+            animate={reducedMotion ? { opacity: [1, 1], x: [0, 0] } : undefined}
+            whileInView={reducedMotion ? { opacity: [1, 1], x: [0, 0] } : { opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 text-center relative overflow-hidden group"
+            transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
           >
             <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-br from-primary/20 to-secondary/20 z-0" />
             
             <div className="relative z-10 w-32 h-32 mx-auto mt-4 mb-6 rounded-full p-1 bg-gradient-to-tr from-primary to-secondary">
               <div className="w-full h-full rounded-full overflow-hidden bg-background relative">
-                <img 
-                  src={`${import.meta.env.BASE_URL}images/avatar.jpeg`}
+                {avatarFailed ? <span role="img" aria-label="MD. Jahidul Islam" className="flex h-full items-center justify-center text-3xl font-display">JI</span> : <img
+                  src={`${import.meta.env.BASE_URL}images/avatar-256.webp`}
+                  width={256}
+                  height={339}
+                  loading="lazy"
+                  decoding="async"
                   onError={(e) => {
-                    e.currentTarget.src = "/me.jpeg";
+                    if (e.currentTarget.dataset.fallback) { setAvatarFailed(true); return; }
+                    e.currentTarget.dataset.fallback = "true";
+                    e.currentTarget.src = `${import.meta.env.BASE_URL}images/avatar.jpeg`;
                   }}
                   alt="MD. Jahidul Islam" 
                   className="w-full h-full object-cover object-top"
-                />
+                />}
               </div>
             </div>
 
@@ -103,14 +116,14 @@ export function About() {
               <h4 className="flex items-center gap-2 font-display font-semibold mb-4 text-foreground">
                 <BookOpen className="w-5 h-5 text-primary" /> Education
               </h4>
-              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
+              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
                 {EDUCATION.map((edu, i) => (
                   <div key={i} className="relative flex items-center w-full group is-active">
                     {/* Timeline Dot */}
-                    <div className={`absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-primary shadow z-10 ${edu.status === 'active' ? 'animate-pulse' : ''}`} />
+                    <div className={`absolute left-2 -translate-x-1/2 flex items-center justify-center w-5 h-5 rounded-full border-4 border-background bg-primary shadow z-10 ${edu.status === 'active' ? 'animate-pulse' : ''}`} />
                     
                     {/* Card */}
-                    <div className={`w-[calc(100%-2rem)] ml-auto md:w-[calc(50%-1.5rem)] ${i % 2 === 0 ? 'md:ml-0 md:mr-auto' : 'md:ml-auto md:mr-0'} glass-card p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors`}>
+                    <div className={`w-[calc(100%-2rem)] ml-auto glass-card p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors`}>
                       <div className="text-xs text-primary mb-1">{edu.year}</div>
                       <div className="font-semibold text-foreground text-sm">{edu.degree}</div>
                       <div className="text-xs text-muted-foreground mt-1">{edu.institution}</div>
@@ -125,15 +138,18 @@ export function About() {
 
           {/* Skills Section */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={reducedMotion ? false : { opacity: 0, x: 30 }}
+            animate={reducedMotion ? { opacity: [1, 1], x: [0, 0] } : undefined}
+            whileInView={reducedMotion ? { opacity: [1, 1], x: [0, 0] } : { opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
           >
             <div className="flex flex-wrap gap-2 mb-8">
               {SKILL_CATEGORIES.map((category) => (
                 <button
                   key={category}
                   onClick={() => setActiveTab(category)}
+                  aria-pressed={activeTab === category}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                     activeTab === category
                       ? "bg-primary text-primary-foreground shadow-[0_0_15px_rgba(0,212,255,0.4)]"
@@ -151,13 +167,13 @@ export function About() {
                   const Icon = skill.icon;
                   return (
                     <motion.div
-                      layout
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.8 }}
-                      transition={{ duration: 0.2 }}
+                      layout={!reducedMotion}
+                      initial={reducedMotion ? false : { opacity: 0, scale: 0.8 }}
+                      animate={reducedMotion ? { opacity: [1, 1], scale: [1, 1] } : { opacity: 1, scale: 1 }}
+                      exit={reducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.8 }}
+                      transition={reducedMotion ? { duration: 0, delay: 0 } : { duration: 0.2 }}
                       key={skill.name}
-                      className="glass-card rounded-xl p-4 flex flex-col items-center justify-center gap-3 group hover:-translate-y-1 hover:border-primary/50 transition-all duration-300 cursor-pointer"
+                      className="glass-card rounded-xl p-4 flex flex-col items-center justify-center gap-3 group hover:-translate-y-1 hover:border-primary/50 transition-all duration-300"
                     >
                       <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
                         <Icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />

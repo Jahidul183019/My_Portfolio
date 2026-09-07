@@ -1,4 +1,11 @@
 import nodemailer from "nodemailer";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(1).max(100).refine((value) => !/[\r\n]/.test(value)),
+  email: z.string().trim().max(254).email(),
+  message: z.string().trim().min(10).max(5000),
+});
 
 function getRequiredEnv(name) {
   const value = process.env[name];
@@ -32,14 +39,17 @@ export default async function handler(req, res) {
   }
 
   try {
-    const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
-
-    const name = (body?.name || "").trim();
-    const message = (body?.message || "").trim();
-
-    if (!name || !message) {
-      return res.status(400).json({ error: "Name and message are required." });
+    let body;
+    try {
+      body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+    } catch {
+      return res.status(400).json({ error: "Request must contain valid JSON." });
     }
+    const parsed = contactSchema.safeParse(body);
+    if (!parsed.success) {
+      return res.status(400).json({ error: "Provide a name (1–100 characters), valid reply email (up to 254 characters), and message (10–5000 characters)." });
+    }
+    const { name, email, message } = parsed.data;
 
     const smtpHost = pickEnv("SMTP_HOST") || "smtp.gmail.com";
     const smtpPort = Number(pickEnv("SMTP_PORT") || 465);
@@ -51,6 +61,9 @@ export default async function handler(req, res) {
       host: smtpHost,
       port: smtpPort,
       secure: smtpPort === 465,
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 20000,
       auth: {
         user: smtpUser,
         pass: smtpPass,
@@ -61,18 +74,13 @@ export default async function handler(req, res) {
       from: pickEnv("CONTACT_FROM_EMAIL", "EMAIL_USER") || smtpUser,
       to: contactTo,
       subject: `Portfolio contact from ${name}`,
-      text: `Name: ${name}\n\nMessage:\n${message}`,
-      html: `
-        <h2>New Portfolio Contact</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, "<br>")}</p>
-      `,
+      replyTo: email,
+      text: `Name: ${name}\nReply email: ${email}\n\nMessage:\n${message}`,
     });
 
     return res.status(200).json({ ok: true });
   } catch (error) {
     console.error("Contact form error:", error);
-    return res.status(500).json({ error: "Unable to send email right now." });
+    return res.status(500).json({ error: "Delivery could not be confirmed. Please wait before trying again; the message may already have been sent." });
   }
 }

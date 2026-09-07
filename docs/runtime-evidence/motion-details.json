@@ -1,0 +1,127 @@
+{
+  "results": [
+    {
+      "name": "all section motion reacts without remount and pulse stops",
+      "status": "pass",
+      "detail": {
+        "reduced": {
+          "sameRoot": true,
+          "sections": [
+            {
+              "id": "home",
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "id": "about",
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "id": "projects",
+              "opacity": "1",
+              "transform": "none"
+            },
+            {
+              "id": "contact",
+              "opacity": "1",
+              "transform": "none"
+            }
+          ],
+          "pulse": [
+            "none"
+          ],
+          "scroll": "auto"
+        },
+        "normal": {
+          "sameRoot": true,
+          "pulse": [
+            "pulse"
+          ],
+          "scroll": "smooth"
+        }
+      }
+    },
+    {
+      "name": "cursor visual endpoint tracks mouse",
+      "status": "pass",
+      "detail": [
+        {
+          "rect": {
+            "x": 2,
+            "y": 392,
+            "width": 16,
+            "height": 16,
+            "top": 392,
+            "right": 18,
+            "bottom": 408,
+            "left": 2
+          },
+          "opacity": "1"
+        },
+        {
+          "rect": {
+            "x": -6,
+            "y": 384,
+            "width": 32,
+            "height": 32,
+            "top": 384,
+            "right": 26,
+            "bottom": 416,
+            "left": -6
+          },
+          "opacity": "0.674334"
+        }
+      ]
+    },
+    {
+      "name": "measured project entrance timings normal and reduced",
+      "status": "fail",
+      "error": "250ms cap not observed"
+    },
+    {
+      "name": "navbar active section agrees with settled anchor",
+      "status": "pass",
+      "detail": [
+        {
+          "id": "about",
+          "active": [
+            "about"
+          ]
+        },
+        {
+          "id": "projects",
+          "active": [
+            "projects"
+          ]
+        },
+        {
+          "id": "contact",
+          "active": [
+            "contact"
+          ]
+        },
+        {
+          "id": "projects",
+          "active": [
+            "projects"
+          ]
+        },
+        {
+          "id": "about",
+          "active": [
+            "about"
+          ]
+        },
+        {
+          "id": "home",
+          "active": [
+            "home"
+          ]
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "network": []
+}

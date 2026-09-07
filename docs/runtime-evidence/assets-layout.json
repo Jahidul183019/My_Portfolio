@@ -1,0 +1,7760 @@
+{
+  "results": [
+    {
+      "name": "final layout and sources 320",
+      "status": "pass",
+      "detail": {
+        "initial": {
+          "width": 320,
+          "doc": 320,
+          "images": [
+            "https://leetcode.com/favicon.ico",
+            "https://cdn.codechef.com/favicon.ico",
+            "http://127.0.0.1:4174/images/avatar-256.webp"
+          ]
+        },
+        "images": [
+          {
+            "alt": "MediMart Full Stack",
+            "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "rendered": 286,
+            "loading": "lazy"
+          },
+          {
+            "alt": "MediMart JavaFX",
+            "currentSrc": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "rendered": 286,
+            "loading": "lazy"
+          },
+          {
+            "alt": "PoishaGo",
+            "currentSrc": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "rendered": 286,
+            "loading": "lazy"
+          },
+          {
+            "alt": "VitalsCare",
+            "currentSrc": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "rendered": 286,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Vantage Robotics",
+            "currentSrc": "",
+            "rendered": 286,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Escape Room Conquest",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "DSA - Data Structures & Algorithms in C++",
+            "currentSrc": "",
+            "rendered": 286,
+            "loading": "lazy"
+          },
+          {
+            "alt": "ShareBox",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Smart Office IoT Monitor",
+            "currentSrc": "",
+            "rendered": 286,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Guessing Number Game",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          }
+        ],
+        "modal": {
+          "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+          "loading": "eager",
+          "width": 318
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700",
+            "display": "swap"
+          }
+        ],
+        "available": [
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          }
+        ],
+        "used": [
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          }
+        ],
+        "requests": [
+          {
+            "url": "http://127.0.0.1:4174/",
+            "type": "document",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-qgtaRzMV.css",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-Df3s6mzW.js",
+            "type": "script",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/avatar-256.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/favicon.svg",
+            "type": "other",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://codeforces.org/s/0/favicon-32x32.png",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/xHvuDeWcaHk/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          }
+        ],
+        "transfers": [
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "transfer": 22294,
+            "encoded": 21994
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "transfer": 13118,
+            "encoded": 12818
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "transfer": 15226,
+            "encoded": 14926
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "transfer": 9314,
+            "encoded": 9014
+          }
+        ]
+      }
+    },
+    {
+      "name": "final layout and sources 375",
+      "status": "pass",
+      "detail": {
+        "initial": {
+          "width": 375,
+          "doc": 375,
+          "images": [
+            "https://leetcode.com/favicon.ico",
+            "https://cdn.codechef.com/favicon.ico",
+            "https://codeforces.org/s/0/favicon-32x32.png",
+            "http://127.0.0.1:4174/images/avatar-256.webp"
+          ]
+        },
+        "images": [
+          {
+            "alt": "MediMart Full Stack",
+            "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "rendered": 341,
+            "loading": "lazy"
+          },
+          {
+            "alt": "MediMart JavaFX",
+            "currentSrc": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "rendered": 341,
+            "loading": "lazy"
+          },
+          {
+            "alt": "PoishaGo",
+            "currentSrc": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "rendered": 341,
+            "loading": "lazy"
+          },
+          {
+            "alt": "VitalsCare",
+            "currentSrc": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "rendered": 341,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Vantage Robotics",
+            "currentSrc": "",
+            "rendered": 341,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Escape Room Conquest",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "DSA - Data Structures & Algorithms in C++",
+            "currentSrc": "",
+            "rendered": 341,
+            "loading": "lazy"
+          },
+          {
+            "alt": "ShareBox",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Smart Office IoT Monitor",
+            "currentSrc": "",
+            "rendered": 341,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Guessing Number Game",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          }
+        ],
+        "modal": {
+          "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+          "loading": "eager",
+          "width": 373
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700",
+            "display": "swap"
+          }
+        ],
+        "available": [
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          }
+        ],
+        "used": [
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          }
+        ],
+        "requests": [
+          {
+            "url": "http://127.0.0.1:4174/",
+            "type": "document",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-qgtaRzMV.css",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-Df3s6mzW.js",
+            "type": "script",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/avatar-256.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/favicon.svg",
+            "type": "other",
+            "status": 200
+          },
+          {
+            "url": "https://codeforces.org/s/0/favicon-32x32.png",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/xHvuDeWcaHk/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "type": "image",
+            "status": 200
+          }
+        ],
+        "transfers": [
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "transfer": 22294,
+            "encoded": 21994
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "transfer": 13118,
+            "encoded": 12818
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "transfer": 15226,
+            "encoded": 14926
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "transfer": 9314,
+            "encoded": 9014
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "transfer": 17254,
+            "encoded": 16954
+          }
+        ]
+      }
+    },
+    {
+      "name": "final layout and sources 430",
+      "status": "pass",
+      "detail": {
+        "initial": {
+          "width": 430,
+          "doc": 430,
+          "images": [
+            "https://leetcode.com/favicon.ico",
+            "https://cdn.codechef.com/favicon.ico",
+            "https://codeforces.org/s/0/favicon-32x32.png",
+            "http://127.0.0.1:4174/images/avatar-256.webp"
+          ]
+        },
+        "images": [
+          {
+            "alt": "MediMart Full Stack",
+            "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "rendered": 396,
+            "loading": "lazy"
+          },
+          {
+            "alt": "MediMart JavaFX",
+            "currentSrc": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "rendered": 341.328125,
+            "loading": "lazy"
+          },
+          {
+            "alt": "PoishaGo",
+            "currentSrc": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "rendered": 396,
+            "loading": "lazy"
+          },
+          {
+            "alt": "VitalsCare",
+            "currentSrc": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "rendered": 396,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Vantage Robotics",
+            "currentSrc": "",
+            "rendered": 396,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Escape Room Conquest",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "DSA - Data Structures & Algorithms in C++",
+            "currentSrc": "",
+            "rendered": 396,
+            "loading": "lazy"
+          },
+          {
+            "alt": "ShareBox",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Smart Office IoT Monitor",
+            "currentSrc": "",
+            "rendered": 396,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Guessing Number Game",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          }
+        ],
+        "modal": {
+          "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+          "loading": "eager",
+          "width": 428
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700",
+            "display": "swap"
+          }
+        ],
+        "available": [
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          }
+        ],
+        "used": [
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          }
+        ],
+        "requests": [
+          {
+            "url": "http://127.0.0.1:4174/",
+            "type": "document",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-qgtaRzMV.css",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-Df3s6mzW.js",
+            "type": "script",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/avatar-256.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/favicon.svg",
+            "type": "other",
+            "status": 200
+          },
+          {
+            "url": "https://codeforces.org/s/0/favicon-32x32.png",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/xHvuDeWcaHk/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "type": "image",
+            "status": 200
+          }
+        ],
+        "transfers": [
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "transfer": 22294,
+            "encoded": 21994
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "transfer": 13118,
+            "encoded": 12818
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "transfer": 15226,
+            "encoded": 14926
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "transfer": 9314,
+            "encoded": 9014
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "transfer": 17254,
+            "encoded": 16954
+          }
+        ]
+      }
+    },
+    {
+      "name": "final layout and sources 768",
+      "status": "pass",
+      "detail": {
+        "initial": {
+          "width": 768,
+          "doc": 768,
+          "images": [
+            "https://leetcode.com/favicon.ico",
+            "https://codeforces.org/s/0/favicon-32x32.png",
+            "https://cdn.codechef.com/favicon.ico",
+            "http://127.0.0.1:4174/images/avatar-256.webp"
+          ]
+        },
+        "images": [
+          {
+            "alt": "MediMart Full Stack",
+            "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "rendered": 346,
+            "loading": "lazy"
+          },
+          {
+            "alt": "MediMart JavaFX",
+            "currentSrc": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "rendered": 341.328125,
+            "loading": "lazy"
+          },
+          {
+            "alt": "PoishaGo",
+            "currentSrc": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "rendered": 346,
+            "loading": "lazy"
+          },
+          {
+            "alt": "VitalsCare",
+            "currentSrc": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "rendered": 346,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Vantage Robotics",
+            "currentSrc": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "rendered": 346,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Escape Room Conquest",
+            "currentSrc": "https://img.youtube.com/vi/cIk5d49OHYo/maxresdefault.jpg",
+            "rendered": 341.328125,
+            "loading": "lazy"
+          },
+          {
+            "alt": "DSA - Data Structures & Algorithms in C++",
+            "currentSrc": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "rendered": 346,
+            "loading": "lazy"
+          },
+          {
+            "alt": "ShareBox",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Smart Office IoT Monitor",
+            "currentSrc": "",
+            "rendered": 346,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Guessing Number Game",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          }
+        ],
+        "modal": {
+          "currentSrc": "http://127.0.0.1:4174/images/project-1-800.webp",
+          "loading": "eager",
+          "width": 718
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "700",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700",
+            "display": "swap"
+          }
+        ],
+        "available": [
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          }
+        ],
+        "used": [
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          }
+        ],
+        "requests": [
+          {
+            "url": "http://127.0.0.1:4174/",
+            "type": "document",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-qgtaRzMV.css",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-Df3s6mzW.js",
+            "type": "script",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/avatar-256.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/favicon.svg",
+            "type": "other",
+            "status": 200
+          },
+          {
+            "url": "https://codeforces.org/s/0/favicon-32x32.png",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/cIk5d49OHYo/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/xHvuDeWcaHk/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://raw.githubusercontent.com/Jahidul183019/ShareBox/main/frontend/public/icon.svg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-800.webp",
+            "type": "image",
+            "status": 200
+          }
+        ],
+        "transfers": [
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "transfer": 22294,
+            "encoded": 21994
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "transfer": 13118,
+            "encoded": 12818
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "transfer": 15226,
+            "encoded": 14926
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "transfer": 17254,
+            "encoded": 16954
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "transfer": 17038,
+            "encoded": 16738
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "transfer": 9314,
+            "encoded": 9014
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-800.webp",
+            "transfer": 45178,
+            "encoded": 44878
+          }
+        ]
+      }
+    },
+    {
+      "name": "final layout and sources 1024",
+      "status": "pass",
+      "detail": {
+        "initial": {
+          "width": 1024,
+          "doc": 1024,
+          "images": [
+            "https://leetcode.com/favicon.ico",
+            "https://codeforces.org/s/0/favicon-32x32.png",
+            "https://cdn.codechef.com/favicon.ico",
+            "http://127.0.0.1:4174/images/avatar-256.webp"
+          ]
+        },
+        "images": [
+          {
+            "alt": "MediMart Full Stack",
+            "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "rendered": 296.65625,
+            "loading": "lazy"
+          },
+          {
+            "alt": "MediMart JavaFX",
+            "currentSrc": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "rendered": 296.65625,
+            "loading": "lazy"
+          },
+          {
+            "alt": "PoishaGo",
+            "currentSrc": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "rendered": 296.65625,
+            "loading": "lazy"
+          },
+          {
+            "alt": "VitalsCare",
+            "currentSrc": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "rendered": 296.65625,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Vantage Robotics",
+            "currentSrc": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "rendered": 296.671875,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Escape Room Conquest",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          },
+          {
+            "alt": "DSA - Data Structures & Algorithms in C++",
+            "currentSrc": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "rendered": 296.65625,
+            "loading": "lazy"
+          },
+          {
+            "alt": "ShareBox",
+            "currentSrc": "https://raw.githubusercontent.com/Jahidul183019/ShareBox/main/frontend/public/icon.svg",
+            "rendered": 192,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Smart Office IoT Monitor",
+            "currentSrc": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "rendered": 296.65625,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Guessing Number Game",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          }
+        ],
+        "modal": {
+          "currentSrc": "http://127.0.0.1:4174/images/project-1-800.webp",
+          "loading": "eager",
+          "width": 766
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "700",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700",
+            "display": "swap"
+          }
+        ],
+        "available": [
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          }
+        ],
+        "used": [
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          }
+        ],
+        "requests": [
+          {
+            "url": "http://127.0.0.1:4174/",
+            "type": "document",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-qgtaRzMV.css",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-Df3s6mzW.js",
+            "type": "script",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/avatar-256.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/favicon.svg",
+            "type": "other",
+            "status": 200
+          },
+          {
+            "url": "https://codeforces.org/s/0/favicon-32x32.png",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://raw.githubusercontent.com/Jahidul183019/ShareBox/main/frontend/public/icon.svg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/cIk5d49OHYo/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/xHvuDeWcaHk/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-800.webp",
+            "type": "image",
+            "status": 200
+          }
+        ],
+        "transfers": [
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "transfer": 22294,
+            "encoded": 21994
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "transfer": 13118,
+            "encoded": 12818
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "transfer": 17254,
+            "encoded": 16954
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "transfer": 15226,
+            "encoded": 14926
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "transfer": 17038,
+            "encoded": 16738
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "transfer": 9314,
+            "encoded": 9014
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-800.webp",
+            "transfer": 45178,
+            "encoded": 44878
+          }
+        ]
+      }
+    },
+    {
+      "name": "final layout and sources 1440",
+      "status": "pass",
+      "detail": {
+        "initial": {
+          "width": 1440,
+          "doc": 1440,
+          "images": [
+            "https://leetcode.com/favicon.ico",
+            "https://cdn.codechef.com/favicon.ico",
+            "http://127.0.0.1:4174/images/avatar-256.webp",
+            "https://codeforces.org/s/0/favicon-32x32.png"
+          ]
+        },
+        "images": [
+          {
+            "alt": "MediMart Full Stack",
+            "currentSrc": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "rendered": 382,
+            "loading": "lazy"
+          },
+          {
+            "alt": "MediMart JavaFX",
+            "currentSrc": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "rendered": 341.328125,
+            "loading": "lazy"
+          },
+          {
+            "alt": "PoishaGo",
+            "currentSrc": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "rendered": 382,
+            "loading": "lazy"
+          },
+          {
+            "alt": "VitalsCare",
+            "currentSrc": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "rendered": 382,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Vantage Robotics",
+            "currentSrc": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "rendered": 382,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Escape Room Conquest",
+            "currentSrc": "https://img.youtube.com/vi/cIk5d49OHYo/maxresdefault.jpg",
+            "rendered": 341.328125,
+            "loading": "lazy"
+          },
+          {
+            "alt": "DSA - Data Structures & Algorithms in C++",
+            "currentSrc": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "rendered": 382,
+            "loading": "lazy"
+          },
+          {
+            "alt": "ShareBox",
+            "currentSrc": "https://raw.githubusercontent.com/Jahidul183019/ShareBox/main/frontend/public/icon.svg",
+            "rendered": 192,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Smart Office IoT Monitor",
+            "currentSrc": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "rendered": 382,
+            "loading": "lazy"
+          },
+          {
+            "alt": "Guessing Number Game",
+            "currentSrc": "",
+            "rendered": 0,
+            "loading": "lazy"
+          }
+        ],
+        "modal": {
+          "currentSrc": "http://127.0.0.1:4174/images/project-1-800.webp",
+          "loading": "eager",
+          "width": 766
+        },
+        "fonts": [
+          {
+            "family": "Inter",
+            "weight": "400",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "500",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Inter",
+            "weight": "700",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600",
+            "display": "swap"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700",
+            "display": "swap"
+          }
+        ],
+        "available": [
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          }
+        ],
+        "used": [
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "ui-monospace",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "600"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Outfit",
+            "weight": "700"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "400"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          },
+          {
+            "family": "Inter",
+            "weight": "500"
+          }
+        ],
+        "requests": [
+          {
+            "url": "http://127.0.0.1:4174/",
+            "type": "document",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-qgtaRzMV.css",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/assets/index-Df3s6mzW.js",
+            "type": "script",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap",
+            "type": "stylesheet",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/avatar-256.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/favicon.svg",
+            "type": "other",
+            "status": 200
+          },
+          {
+            "url": "https://codeforces.org/s/0/favicon-32x32.png",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+            "type": "font",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/cIk5d49OHYo/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://raw.githubusercontent.com/Jahidul183019/ShareBox/main/frontend/public/icon.svg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "https://img.youtube.com/vi/xHvuDeWcaHk/maxresdefault.jpg",
+            "type": "image",
+            "status": 200
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-800.webp",
+            "type": "image",
+            "status": 200
+          }
+        ],
+        "transfers": [
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+            "transfer": 22294,
+            "encoded": 21994
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+            "transfer": 13118,
+            "encoded": 12818
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+            "transfer": 15226,
+            "encoded": 14926
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+            "transfer": 17254,
+            "encoded": 16954
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-4-480.webp",
+            "transfer": 17038,
+            "encoded": 16738
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+            "transfer": 9314,
+            "encoded": 9014
+          },
+          {
+            "url": "http://127.0.0.1:4174/images/project-1-800.webp",
+            "transfer": 45178,
+            "encoded": 44878
+          }
+        ]
+      }
+    },
+    {
+      "name": "rendered hover focus contrast false",
+      "status": "pass",
+      "detail": {
+        "violations": 0,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".cursor-pointer > .text-gradient"
+              ],
+              [
+                "button[aria-current=\"location\"]"
+              ],
+              [
+                ".text-foreground\\/70.hover\\:text-primary:nth-child(2)"
+              ],
+              [
+                ".text-foreground\\/70.hover\\:text-primary:nth-child(3)"
+              ],
+              [
+                ".text-foreground\\/70.hover\\:text-primary:nth-child(4)"
+              ],
+              [
+                ".border-primary\\/20 > span"
+              ],
+              [
+                "h1 > .block.text-foreground"
+              ],
+              [
+                "h1 > .text-gradient"
+              ],
+              [
+                ".text-lg.sm\\:text-xl.md\\:text-2xl:nth-child(1)"
+              ],
+              [
+                ".text-lg.sm\\:text-xl.md\\:text-2xl:nth-child(2)"
+              ],
+              [
+                ".sm\\:text-lg"
+              ],
+              [
+                ".flex-wrap.gap-4.flex > .bg-gradient-to-r.from-cyan-700.to-purple-700"
+              ],
+              [
+                ".border-2"
+              ],
+              [
+                ".backdrop-blur-md"
+              ],
+              [
+                "div:nth-child(1) > .block.text-xl.font-bold"
+              ],
+              [
+                ".sm\\:flex > div:nth-child(1) > .text-muted-foreground"
+              ],
+              [
+                "div:nth-child(2) > .block.text-xl.font-bold"
+              ],
+              [
+                ".sm\\:flex > div:nth-child(2) > .text-muted-foreground"
+              ],
+              [
+                ".flex-1"
+              ],
+              [
+                "code"
+              ],
+              [
+                "footer > p"
+              ]
+            ]
+          }
+        ],
+        "closeStyle": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(14, 116, 144)",
+          "outline": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "name": "rendered hover focus contrast true",
+      "status": "pass",
+      "detail": {
+        "violations": 0,
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "targets": [
+              [
+                ".cursor-pointer > .text-gradient"
+              ],
+              [
+                "button[aria-current=\"location\"]"
+              ],
+              [
+                ".text-foreground\\/70.hover\\:text-primary:nth-child(2)"
+              ],
+              [
+                ".text-foreground\\/70.hover\\:text-primary:nth-child(3)"
+              ],
+              [
+                ".text-foreground\\/70.hover\\:text-primary:nth-child(4)"
+              ],
+              [
+                ".border-primary\\/20 > span"
+              ],
+              [
+                "h1 > .block.text-foreground"
+              ],
+              [
+                "h1 > .text-gradient"
+              ],
+              [
+                ".text-lg.sm\\:text-xl.md\\:text-2xl:nth-child(1)"
+              ],
+              [
+                ".text-lg.sm\\:text-xl.md\\:text-2xl:nth-child(2)"
+              ],
+              [
+                ".sm\\:text-lg"
+              ],
+              [
+                ".flex-wrap.gap-4.flex > .bg-gradient-to-r.from-cyan-700.to-purple-700"
+              ],
+              [
+                ".border-2"
+              ],
+              [
+                ".backdrop-blur-md"
+              ],
+              [
+                "div:nth-child(1) > .block.text-xl.font-bold"
+              ],
+              [
+                ".sm\\:flex > div:nth-child(1) > .text-muted-foreground"
+              ],
+              [
+                "div:nth-child(2) > .block.text-xl.font-bold"
+              ],
+              [
+                ".sm\\:flex > div:nth-child(2) > .text-muted-foreground"
+              ],
+              [
+                ".flex-1"
+              ],
+              [
+                "code"
+              ],
+              [
+                "footer > p"
+              ]
+            ]
+          }
+        ],
+        "closeStyle": {
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(14, 116, 144)",
+          "outline": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "name": "font failure fallback preserves visible content",
+      "status": "pass",
+      "detail": {
+        "fonts": [],
+        "title": "MD. Jahidul\nIslam"
+      }
+    }
+  ],
+  "failures": [],
+  "network": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    }
+  ]
+}

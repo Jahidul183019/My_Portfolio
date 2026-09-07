@@ -1,0 +1,19 @@
+[
+  {
+    "id": "color-contrast",
+    "nodes": [
+      {
+        "target": [
+          ".grid.gap-1 > .font-semibold.text-sm"
+        ],
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.59 (foreground color: #f8fafc, background color: #ef4444, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "target": [
+          ".opacity-90"
+        ],
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.16 (foreground color: #f7e8ea, background color: #ef4444, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  }
+]

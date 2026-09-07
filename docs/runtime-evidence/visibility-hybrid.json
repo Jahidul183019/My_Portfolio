@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "name": "actual headed tab visibility pause and resume",
+      "status": "fail",
+      "error": "browser did not expose actual hidden state\n\nfalse !== true\n"
+    },
+    {
+      "name": "dynamic fine to touch to fine browser emulation",
+      "status": "pass",
+      "detail": [
+        {
+          "enabled": false,
+          "fine": true,
+          "coarse": false,
+          "hover": true,
+          "listeners": 1
+        },
+        {
+          "enabled": true,
+          "fine": false,
+          "coarse": true,
+          "hover": false,
+          "listeners": 0
+        },
+        {
+          "enabled": false,
+          "fine": true,
+          "coarse": false,
+          "hover": true,
+          "listeners": 1
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "network": []
+}

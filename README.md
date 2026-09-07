@@ -20,7 +20,6 @@ This project showcases:
 - Framer Motion
 - Wouter (lightweight routing)
 - React Hook Form + Zod (form validation)
-- TanStack Query (provider setup)
 - Radix UI primitives
 
 ## Project Structure
@@ -136,7 +135,7 @@ pnpm preview
 
 ## Notes
 
-- The contact form sends data to `/api/contact` from `src/sections/Contact.tsx`.
+- The contact form sends validated name, reply email, and message fields to `/api/contact` from `src/sections/Contact.tsx`. The server sends text-only email with `replyTo`. A 30-second client timeout does not automatically retry; delivery may already have occurred.
 - In Vercel, add `EMAIL_USER`, `EMAIL_PASS`, and `EMAIL_TO` in Project Settings -> Environment Variables before deploying.
 - The resume link in the hero section points to `public/Resume.pdf`.
 - `pnpm-workspace.yaml` includes `onlyBuiltDependencies: [esbuild]` to avoid ignored build script warnings on pnpm v10.
@@ -149,3 +148,13 @@ pnpm preview
 - Project cards and modal data: `src/sections/Projects.tsx`
 - Contact details and form logic: `src/sections/Contact.tsx`
 - Theme variables and global styling: `src/index.css`
+
+## Verification and optimized images
+
+Run `pnpm typecheck`, `pnpm build`, and `node --test tests/*.test.mjs`.
+The tests mock SMTP and browser lifecycle APIs; they do not send real email or replace browser/device testing.
+
+Project cards use responsive WebP variants generated with `cwebp -q 88 -m 6 -resize WIDTH 0 SOURCE -o OUTPUT`.
+Widths are 480/800/1200, capped at each original width (project 6 caps at 1024).
+The avatar is 256×339. Original assets are retained; normal project rendering requests the optimized files.
+See `docs/implementation-report.md` and `docs/image-optimization.json` for measurements and verification limits.

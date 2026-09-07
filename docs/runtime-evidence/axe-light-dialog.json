@@ -1,0 +1,2270 @@
+{
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "aria-hidden-focus",
+      "impact": "serious",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-10.8.1"
+      ],
+      "description": "Ensure aria-hidden elements are not focusable nor contain focusable elements",
+      "help": "ARIA hidden element must not be focusable or contain focusable elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-hidden-focus?application=playwright",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "focusable-modal-open",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<span data-radix-focus-guard=\"\" tabindex=\"0\" data-aria-hidden=\"true\" aria-hidden=\"true\" style=\"outline: none; opacity: 0; position: fixed; pointer-events: none;\"></span>",
+                  "target": [
+                    "span[data-radix-focus-guard=\"\"][data-aria-hidden=\"true\"][aria-hidden=\"true\"]:nth-child(1)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Check that focusable elements are not tabbable in the current state"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-radix-focus-guard=\"\" tabindex=\"0\" data-aria-hidden=\"true\" aria-hidden=\"true\" style=\"outline: none; opacity: 0; position: fixed; pointer-events: none;\"></span>",
+          "target": [
+            "span[data-radix-focus-guard=\"\"][data-aria-hidden=\"true\"][aria-hidden=\"true\"]:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Check that focusable elements are not tabbable in the current state"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "focusable-modal-open",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" aria-label=\"Go to home section\" class=\"text-2xl font-display font-bold cursor-pointer\" style=\"opacity: 1; transform: none;\"><span class=\"text-gradient\">&lt;JI /&gt;</span></button>",
+                  "target": [
+                    ".cursor-pointer"
+                  ]
+                },
+                {
+                  "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-foreground/70\" style=\"opacity: 1; transform: none;\">Home</button>",
+                  "target": [
+                    ".text-foreground\\/70.hover\\:text-primary:nth-child(1)"
+                  ]
+                },
+                {
+                  "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-foreground/70\" style=\"opacity: 1; transform: none;\">About</button>",
+                  "target": [
+                    ".text-foreground\\/70.hover\\:text-primary:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-primary\" aria-current=\"location\" style=\"opacity: 1; transform: none;\">Projects<div class=\"h-0.5 w-full bg-primary mt-1 rounded-full\" style=\"transform: none; transform-origin: 50% 50% 0px; opacity: 1;\"></div></button>",
+                  "target": [
+                    "button[aria-current=\"location\"]"
+                  ]
+                },
+                {
+                  "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-foreground/70\" style=\"opacity: 1; transform: none;\">Contact</button>",
+                  "target": [
+                    ".text-foreground\\/70.hover\\:text-primary:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<button class=\"inline-flex items-ce...\" aria-label=\"Switch to dark theme\">",
+                  "target": [
+                    ".md\\:flex > div > .hover\\:bg-accent.hover\\:text-accent-foreground[aria-label=\"Switch to dark theme\"]"
+                  ]
+                },
+                {
+                  "html": "<button class=\"inline-flex items-ce...\">",
+                  "target": [
+                    ".h-14.px-8.bg-gradient-to-r"
+                  ]
+                },
+                {
+                  "html": "<button class=\"inline-flex items-ce...\">",
+                  "target": [
+                    ".space-y-8 > .gap-4.flex-wrap.flex > .border-2.border-primary\\/50.bg-transparent"
+                  ]
+                },
+                {
+                  "html": "<a href=\"/Resume.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-ce...\">",
+                  "target": [
+                    ".backdrop-blur-md"
+                  ]
+                },
+                {
+                  "html": "<a href=\"https://github.com/Jahidul183019\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"GitHub profile\" class=\"w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0\">",
+                  "target": [
+                    ".shrink-0.w-11[aria-label=\"GitHub profile\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"https://www.linkedin.com/in/md-jahidul-islam-231879321\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"LinkedIn profile\" class=\"w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0\">",
+                  "target": [
+                    ".shrink-0.w-11[aria-label=\"LinkedIn profile\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"https://leetcode.com/u/Jahidul1/\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"LeetCode\" class=\"w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0\">",
+                  "target": [
+                    "a[aria-label=\"LeetCode\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"https://codeforces.com/profile/Jahidul1\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"Codeforces\" class=\"w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0\">",
+                  "target": [
+                    "a[aria-label=\"Codeforces\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"https://www.codechef.com/users/jahidul1\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"CodeChef\" class=\"w-11 h-11 rounded-full glass-card hover:-translate-y-1 hover:text-primary transition-all flex items-center justify-center shrink-0\">",
+                  "target": [
+                    "a[aria-label=\"CodeChef\"]"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"true\" class=\"px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-primary text-primary-foreground shadow-[0_0_15px_rgba(0,212,255,0.4)]\">All</button>",
+                  "target": [
+                    ".shadow-\\[0_0_15px_rgba\\(0\\,212\\,255\\,0\\.4\\)\\]"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground border border-white/5\">Frontend</button>",
+                  "target": [
+                    ".hover\\:bg-white\\/10.border-white\\/5.hover\\:text-foreground:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground border border-white/5\">Backend</button>",
+                  "target": [
+                    ".hover\\:bg-white\\/10.border-white\\/5.hover\\:text-foreground:nth-child(3)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground border border-white/5\">Programming</button>",
+                  "target": [
+                    ".hover\\:bg-white\\/10.border-white\\/5.hover\\:text-foreground:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground border border-white/5\">Database</button>",
+                  "target": [
+                    ".hover\\:bg-white\\/10.border-white\\/5.hover\\:text-foreground:nth-child(5)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-foreground border border-white/5\">Tools</button>",
+                  "target": [
+                    ".hover\\:bg-white\\/10.border-white\\/5.hover\\:text-foreground:nth-child(6)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"true\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/25\n              \">",
+                  "target": [
+                    ".border-primary"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(3)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(5)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(6)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(7)"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(8)"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for MediMart Full Stack\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for MediMart JavaFX\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for PoishaGo\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    "button[aria-label=\"View details for PoishaGo\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for VitalsCare\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    "button[aria-label=\"View details for VitalsCare\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for Vantage Robotics\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(5) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for Escape Room Conquest\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(6) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for DSA - Data Structures &amp; Algorithms in C++\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(7) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for ShareBox\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    "button[aria-label=\"View details for ShareBox\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for QueueStorm\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    "button[aria-label=\"View details for QueueStorm\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for CoWork — Room Booking API\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(10) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for STM-32 Labs\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    "button[aria-label=\"View details for STM-32 Labs\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for Smart Office IoT Monitor\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(12) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<button type=\"button\" aria-label=\"View details for Guessing Number Game\" aria-haspopup=\"dialog\" class=\"absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]\"></button>",
+                  "target": [
+                    ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(13) > .z-30.focus-visible\\:outline-offset-\\[-4px\\][aria-haspopup=\"dialog\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"mailto:mdjahidulislamsarker@gmail.com\" class=\"text-sm text-muted-foreground [overflow-wrap:anywhere] underline underline-offset-4\">mdjahidulislamsarker@gmail.com</a>",
+                  "target": [
+                    ".\\[overflow-wrap\\:anywhere\\]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"https://github.com/Jahidul183019\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"GitHub profile\" class=\"w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-foreground hover:text-primary hover:-translate-y-0.5 transition-all\">",
+                  "target": [
+                    ".hover\\:-translate-y-0\\.5.w-11[aria-label=\"GitHub profile\"]"
+                  ]
+                },
+                {
+                  "html": "<a href=\"https://www.linkedin.com/in/md-jahidul-islam-231879321\" target=\"_blank\" rel=\"noreferrer\" aria-label=\"LinkedIn profile\" ...>",
+                  "target": [
+                    ".hover\\:-translate-y-0\\.5.w-11[aria-label=\"LinkedIn profile\"]"
+                  ]
+                },
+                {
+                  "html": "<input class=\"flex h-12 w-full rou...\" id=\"contact-name\" autocomplete=\"name\" maxlength=\"100\" aria-invalid=\"false\" placeholder=\"Your Name\" name=\"name\">",
+                  "target": [
+                    "#contact-name"
+                  ]
+                },
+                {
+                  "html": "<input type=\"email\" class=\"flex h-12 w-full rou...\" id=\"contact-email\" autocomplete=\"email\" maxlength=\"254\" placeholder=\"you@example.com\" aria-invalid=\"false\" name=\"email\">",
+                  "target": [
+                    "#contact-email"
+                  ]
+                },
+                {
+                  "html": "<textarea class=\"flex min-h-[120px] w...\" id=\"contact-message\" maxlength=\"5000\" aria-invalid=\"false\" placeholder=\"Your Message\" name=\"message\">",
+                  "target": [
+                    "#contact-message"
+                  ]
+                },
+                {
+                  "html": "<button class=\"inline-flex items-ce...\" type=\"submit\">",
+                  "target": [
+                    ".sm\\:w-auto"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Check that focusable elements are not tabbable in the current state"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<div id=\"root\" data-aria-hidden=\"true\" aria-hidden=\"true\">",
+          "target": [
+            "#root"
+          ],
+          "failureSummary": "Fix all of the following:\n  Check that focusable elements are not tabbable in the current state"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "focusable-modal-open",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<span data-radix-focus-guard=\"\" tabindex=\"0\" data-aria-hidden=\"true\" aria-hidden=\"true\" style=\"outline: none; opacity: 0; position: fixed; pointer-events: none;\"></span>",
+                  "target": [
+                    "span[data-radix-focus-guard=\"\"][data-aria-hidden=\"true\"][aria-hidden=\"true\"]:nth-child(4)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Check that focusable elements are not tabbable in the current state"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span data-radix-focus-guard=\"\" tabindex=\"0\" data-aria-hidden=\"true\" aria-hidden=\"true\" style=\"outline: none; opacity: 0; position: fixed; pointer-events: none;\"></span>",
+          "target": [
+            "span[data-radix-focus-guard=\"\"][data-aria-hidden=\"true\"][aria-hidden=\"true\"]:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Check that focusable elements are not tabbable in the current state"
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "18.0pt (24px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"text-gradient\">&lt;JI /&gt;</span>",
+                  "target": [
+                    ".cursor-pointer > .text-gradient"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-gradient\">&lt;JI /&gt;</span>",
+          "target": [
+            ".cursor-pointer > .text-gradient"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"fixed top-0 left-0 right-0 z-[70] transition-all duration-300 glass-nav py-3\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-foreground/70\" style=\"opacity: 1; transform: none;\">Home</button>",
+          "target": [
+            ".text-foreground\\/70.hover\\:text-primary:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"fixed top-0 left-0 right-0 z-[70] transition-all duration-300 glass-nav py-3\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-foreground/70\" style=\"opacity: 1; transform: none;\">About</button>",
+          "target": [
+            ".text-foreground\\/70.hover\\:text-primary:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"fixed top-0 left-0 right-0 z-[70] transition-all duration-300 glass-nav py-3\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-primary\" aria-current=\"location\" style=\"opacity: 1; transform: none;\">Projects<div class=\"h-0.5 w-full bg-primary mt-1 rounded-full\" style=\"transform: none; transform-origin: 50% 50% 0px; opacity: 1;\"></div></button>",
+          "target": [
+            "button[aria-current=\"location\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header class=\"fixed top-0 left-0 right-0 z-[70] transition-all duration-300 glass-nav py-3\">",
+                  "target": [
+                    "header"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"text-sm font-medium transition-colors hover:text-primary text-foreground/70\" style=\"opacity: 1; transform: none;\">Contact</button>",
+          "target": [
+            ".text-foreground\\/70.hover\\:text-primary:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "54.0pt (72px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-gradient\">Islam</span>",
+          "target": [
+            "h1 > .text-gradient"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "22.5pt (30px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium\">I am a </span>",
+          "target": [
+            ".text-lg.sm\\:text-xl.md\\:text-2xl:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed\">Building software that is clean, efficient, and practical. I focus on turning ideas into reliable solutions with a strong engineering mindset.</p>",
+          "target": [
+            ".sm\\:text-lg"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button class=\"inline-flex items-ce...\">",
+                  "target": [
+                    ".h-14.px-8.bg-gradient-to-r"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button class=\"inline-flex items-ce...\">",
+          "target": [
+            ".h-14.px-8.bg-gradient-to-r"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"bg-background/70 px-4 py-3 border-b border-black/10 dark:border-white/5 flex items-center gap-2\">",
+                  "target": [
+                    ".bg-background\\/70"
+                  ]
+                },
+                {
+                  "html": "<div class=\"glass-card rounded-2xl overflow-hidden border border-black/10 dark:border-white/10 shadow-2xl relative z-10 group code-window transition-all duration-500\">",
+                  "target": [
+                    ".dark\\:border-white\\/10"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 blur-2xl -z-10 rounded-3xl transform scale-105 opacity-50\"></div>",
+                  "target": [
+                    ".from-primary\\/30"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"flex-1 text-center text-xs font-mono text-muted-foreground mr-8\">portfolio.js</div>",
+          "target": [
+            ".flex-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<code>",
+          "target": [
+            "code"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"text-gradient\">Me</span>",
+                  "target": [
+                    "#about > .max-w-7xl.sm\\:px-6.lg\\:px-8 > .mb-16.text-center > .inline-block.text-3xl.md\\:text-4xl > .text-gradient"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-gradient\">Me</span>",
+          "target": [
+            "#about > .max-w-7xl.sm\\:px-6.lg\\:px-8 > .mb-16.text-center > .inline-block.text-3xl.md\\:text-4xl > .text-gradient"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "bold",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h2 tabindex=\"-1\" class=\"text-3xl md:text-4xl font-display font-bold inline-block relative\">Featured <span class=\"text-gradient\">Projects</span><div class=\"absolute -bottom-2 left-1/2 -translate-x-1/2 w-12 h-1 bg-secondary rounded-full\"></div></h2>",
+          "target": [
+            "#projects > .max-w-7xl.sm\\:px-6.lg\\:px-8 > .mb-16.text-center > .inline-block.text-3xl.md\\:text-4xl"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "27.0pt (36px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"text-gradient\">Projects</span>",
+                  "target": [
+                    "#projects > .max-w-7xl.sm\\:px-6.lg\\:px-8 > .mb-16.text-center > .inline-block.text-3xl.md\\:text-4xl > .text-gradient"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-gradient\">Projects</span>",
+          "target": [
+            "#projects > .max-w-7xl.sm\\:px-6.lg\\:px-8 > .mb-16.text-center > .inline-block.text-3xl.md\\:text-4xl > .text-gradient"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"mt-4 text-muted-foreground max-w-2xl mx-auto\">A selection of full-stack, academic, and systems-focused work built around practical problem solving.</p>",
+          "target": [
+            "#projects > .max-w-7xl.sm\\:px-6.lg\\:px-8 > .mb-16.text-center > .max-w-2xl.mt-4.mx-auto"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(2) > .ml-2.px-1\\.5.py-0\\.5"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(2)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(2) > .ml-2.px-1\\.5.py-0\\.5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(3)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">3</span>",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(3) > .ml-2.px-1\\.5.py-0\\.5"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(3)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">3</span>",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(3) > .ml-2.px-1\\.5.py-0\\.5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(4) > .ml-2.px-1\\.5.py-0\\.5"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(4)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(4) > .ml-2.px-1\\.5.py-0\\.5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(5)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(5) > .ml-2.px-1\\.5.py-0\\.5"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(5)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(5) > .ml-2.px-1\\.5.py-0\\.5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(6)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">5</span>",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(6) > .ml-2.px-1\\.5.py-0\\.5"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(6)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">5</span>",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(6) > .ml-2.px-1\\.5.py-0\\.5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(7)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(7) > .ml-2.px-1\\.5.py-0\\.5"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(7)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(7) > .ml-2.px-1\\.5.py-0\\.5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(8)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(8)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(8) > .ml-2.px-1\\.5.py-0\\.5"
+                  ]
+                },
+                {
+                  "html": "<button aria-pressed=\"false\" class=\"\n                px-5 py-2 rounded-full text-sm font-medium transition-all duration-300\n                border\n                bg-white/5 text-muted-foreground border-white/10 hover:border-primary/40 hover:text-foreground\n              \">",
+                  "target": [
+                    ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(8)"
+                  ]
+                },
+                {
+                  "html": "<canvas aria-hidden=\"true\" class=\"fixed inset-0 z-[-1] pointer-events-none opacity-60\" width=\"1440\" height=\"900\"></canvas>",
+                  "target": [
+                    "canvas"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"\n                ml-2 text-xs px-1.5 py-0.5 rounded-full\n                bg-white/10 text-muted-foreground\n              \">1</span>",
+          "target": [
+            ".px-5.hover\\:text-foreground.hover\\:border-primary\\/40:nth-child(8) > .ml-2.px-1\\.5.py-0\\.5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-primary-foreground shadow-lg\">Featured</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .h-48.overflow-hidden.relative > .left-4.top-4.text-primary-foreground"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs uppercase tracking-[0.25em] text-primary/80\">Full Stack</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > .gap-4.justify-between.mb-2 > .tracking-\\[0\\.25em\\].text-primary\\/80.uppercase"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors\">MediMart Full Stack</h3>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"text-muted-foreground text-xs sm:text-sm mt-1 mb-4 flex-grow leading-relaxed\">Full-stack medical store management system modernizing pharmacy operations with real-time workflows and secure access.</p>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > .sm\\:text-sm.leading-relaxed.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">React</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">Vite</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">Spring Boot</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-muted-foreground\">+4</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.rounded-md.py-1:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-sm font-medium text-foreground flex items-center gap-1 group-hover:text-primary transition-colors\">",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(1) > .-mt-6.p-6.z-20 > .mt-auto.justify-between.items-center > .gap-1.group-hover\\:text-primary.text-foreground"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-primary-foreground shadow-lg\">Featured</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .h-48.overflow-hidden.relative > .left-4.top-4.text-primary-foreground"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs uppercase tracking-[0.25em] text-primary/80\">Academic</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > .gap-4.justify-between.mb-2 > .tracking-\\[0\\.25em\\].text-primary\\/80.uppercase"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors\">MediMart JavaFX</h3>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"text-muted-foreground text-xs sm:text-sm mt-1 mb-4 flex-grow leading-relaxed\">Object Oriented Design and Programming Lab academic pharmacy management system built for desktop workflows and structured inventory handling.</p>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > .sm\\:text-sm.leading-relaxed.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">Java</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">JavaFX</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">SQLite</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-muted-foreground\">+3</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.rounded-md.py-1:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-sm font-medium text-foreground flex items-center gap-1 group-hover:text-primary transition-colors\">",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(2) > .-mt-6.p-6.z-20 > .mt-auto.justify-between.items-center > .gap-1.group-hover\\:text-primary.text-foreground"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-primary-foreground shadow-lg\">Featured</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .h-48.overflow-hidden.relative > .left-4.top-4.text-primary-foreground"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs uppercase tracking-[0.25em] text-primary/80\">Academic</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > .gap-4.justify-between.mb-2 > .tracking-\\[0\\.25em\\].text-primary\\/80.uppercase"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "15.0pt (20px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h3 class=\"text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors\">PoishaGo</h3>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > h3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"text-muted-foreground text-xs sm:text-sm mt-1 mb-4 flex-grow leading-relaxed\">DBMS Lab Full-stack Mobile Financial Service platform with fraud detection, loyalty rewards, and live support.</p>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > .sm\\:text-sm.leading-relaxed.mt-1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">React</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">FastAPI</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-primary\">PostgreSQL</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.text-primary.rounded-md:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-muted-foreground\">+4</span>",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > .mb-6.flex-wrap.gap-2 > .px-2\\.5.rounded-md.py-1:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"text-sm font-medium text-foreground flex items-center gap-1 group-hover:text-primary transition-colors\">",
+          "target": [
+            ".h-full.hover\\:border-primary\\/40.overflow-hidden:nth-child(3) > .-mt-6.p-6.z-20 > .mt-auto.justify-between.items-center > .gap-1.group-hover\\:text-primary.text-foreground"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer class=\"py-8 text-center border-t border-white/5 relative bg-background/50 backdrop-blur-sm\"><p class=\"text-muted-foreground text-sm\">© 2026 MD. Jahidul Islam. All rights reserved.</p></footer>",
+                  "target": [
+                    "footer"
+                  ]
+                },
+                {
+                  "html": "<div class=\"absolute top-1/2 left-0 w-full h-[500px] bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none -skew-y-6 transform-gpu\"></div>",
+                  "target": [
+                    ".top-1\\/2"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"text-muted-foreground text-sm\">© 2026 MD. Jahidul Islam. All rights reserved.</p>",
+          "target": [
+            "footer > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p id=\"radix-:r1i:\" class=\"text-muted-foreground text-sm sm:text-base\">",
+          "target": [
+            "#radix-\\:r1i\\:"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"https://github.com/J...\" target=\"_blank\" rel=\"noreferrer\" class=\"inline-flex items-ce...\">",
+                  "target": [
+                    ".pt-6 > .bg-gradient-to-r.from-cyan-700.to-purple-700:nth-child(1)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://github.com/J...\" target=\"_blank\" rel=\"noreferrer\" class=\"inline-flex items-ce...\">",
+          "target": [
+            ".pt-6 > .bg-gradient-to-r.from-cyan-700.to-purple-700:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"https://github.com/J...\" target=\"_blank\" rel=\"noreferrer\" class=\"inline-flex items-ce...\">",
+                  "target": [
+                    ".bg-gradient-to-r.from-cyan-700.to-purple-700:nth-child(2)"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://github.com/J...\" target=\"_blank\" rel=\"noreferrer\" class=\"inline-flex items-ce...\">",
+          "target": [
+            ".bg-gradient-to-r.from-cyan-700.to-purple-700:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        }
+      ]
+    }
+  ]
+}

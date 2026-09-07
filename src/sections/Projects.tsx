@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useMediaQuery } from "@/hooks/use-media-query";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, ExternalLink, X } from "lucide-react";
+import { Github, ExternalLink, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+import { Dialog, DialogPortal, DialogOverlay, DialogSurface, DialogClose, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { ProjectImage } from "@/components/ProjectImage";
 
 type ProjectLink = {
   label: string;
@@ -200,85 +204,32 @@ const PROJECTS: Project[] = [
   },
 ];
 
+const ORDERED_PROJECTS = [...PROJECTS].sort((a, b) => Number(b.featured) - Number(a.featured));
+const CATEGORIES = ["All", ...Array.from(new Set(PROJECTS.map((p) => p.category)))];
+
 export function Projects() {
+  const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeCategory, setActiveCategory] = useState("All");
-
-  const categories = ["All", ...Array.from(new Set(PROJECTS.map((p) => p.category)))];
-
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
   const filteredProjects = activeCategory === "All"
-    ? PROJECTS
-    : PROJECTS.filter((p) => p.category === activeCategory);
-
-  const getYouTubeVideoId = (href: string) => {
-    try {
-      const url = new URL(href);
-
-      if (url.hostname.includes("youtu.be")) {
-        return url.pathname.split("/").filter(Boolean)[0] ?? null;
-      }
-
-      if (url.hostname.includes("youtube.com")) {
-        if (url.pathname === "/watch") {
-          return url.searchParams.get("v");
-        }
-
-        if (url.pathname.startsWith("/shorts/")) {
-          return url.pathname.split("/").filter(Boolean)[1] ?? null;
-        }
-      }
-    } catch {
-      return null;
-    }
-
-    return null;
-  };
-
-  const getProjectThumbnail = (project: Project) => {
-    const localThumbnail = getImageSrc(project.thumbnail);
-
-    if (localThumbnail) {
-      return localThumbnail;
-    }
-
-    const demoLink = project.links.find((link) => link.kind === "demo")?.href;
-
-    if (demoLink) {
-      const videoId = getYouTubeVideoId(demoLink);
-
-      if (videoId) {
-        return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
-      }
-
-      return `https://image.thum.io/get/width/1280/crop/900/noanimate/${encodeURIComponent(demoLink)}`;
-    }
-
-    return null;
-  };
-
-  const getImageSrc = (thumbnail?: string) => {
-    if (!thumbnail) {
-      return null;
-    }
-
-    if (thumbnail.startsWith("http")) {
-      return thumbnail;
-    }
-
-    return `${import.meta.env.BASE_URL}images/${thumbnail}`;
-  };
+    ? ORDERED_PROJECTS : ORDERED_PROJECTS.filter((p) => p.category === activeCategory);
 
   return (
+    <Dialog open={selectedProject !== null} onOpenChange={(open) => { if (!open) setSelectedProject(null); }}>
     <section id="projects" className="py-16 sm:py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={reducedMotion ? false : { opacity: 0, y: 20 }}
+          animate={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : undefined}
+          whileInView={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : { opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
+          transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
         >
-          <h2 className="text-3xl md:text-4xl font-display font-bold inline-block relative">
+          <h2 ref={headingRef} tabIndex={-1} className="text-3xl md:text-4xl font-display font-bold inline-block relative">
             Featured <span className="text-gradient">Projects</span>
             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-12 h-1 bg-secondary rounded-full" />
           </h2>
@@ -289,15 +240,18 @@ export function Projects() {
 
         {/* Category Filter */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={reducedMotion ? false : { opacity: 0, y: 10 }}
+          animate={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : undefined}
+          whileInView={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : { opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12"
+          transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
         >
-          {categories.map((cat) => (
+          {CATEGORIES.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
+              aria-pressed={activeCategory === cat}
               className={`
                 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300
                 border
@@ -311,7 +265,7 @@ export function Projects() {
               <span className={`
                 ml-2 text-xs px-1.5 py-0.5 rounded-full
                 ${activeCategory === cat
-                  ? "bg-primary-foreground/20 text-primary-foreground"
+                  ? "bg-black/10 text-primary-foreground"
                   : "bg-white/10 text-muted-foreground"
                 }
               `}>
@@ -326,29 +280,23 @@ export function Projects() {
           {filteredProjects.map((project, i) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={reducedMotion ? false : { opacity: 0, y: 30 }}
+              animate={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : undefined}
+              whileInView={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : { opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="glass-card rounded-2xl overflow-hidden group cursor-pointer flex flex-col h-full hover:border-primary/40 transition-colors duration-300"
-              onClick={() => setSelectedProject(project)}
+              transition={reducedMotion ? { duration: 0, delay: 0 } : { delay: Math.min(i * 0.1, 0.25) }}
+              className="relative glass-card rounded-2xl overflow-hidden group flex flex-col h-full hover:border-primary/40 transition-colors duration-300"
             >
+              <button
+                type="button"
+                aria-label={`View details for ${project.title}`}
+                aria-haspopup="dialog"
+                className="absolute inset-0 z-30 w-full rounded-2xl focus-visible:outline-offset-[-4px]"
+                onClick={(event) => { triggerRef.current = event.currentTarget; setSelectedProject(project); }}
+              />
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
-                {getProjectThumbnail(project) ? (
-                  <img
-                    src={getProjectThumbnail(project) as string}
-                    alt={project.title}
-                    className="max-w-full max-h-full object-contain mx-auto transition-transform duration-300"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 via-secondary/20 to-background flex items-end p-5">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.3em] text-primary/80 mb-2">{project.category}</p>
-                      <h3 className="text-xl font-display font-bold text-foreground">{project.title}</h3>
-                    </div>
-                  </div>
-                )}
+                <ProjectImage key={project.id} project={project} />
                 {project.featured && (
                   <span className="absolute top-4 left-4 z-20 px-3 py-1 rounded-full text-xs font-semibold bg-primary text-primary-foreground shadow-lg">
                     Featured
@@ -391,47 +339,51 @@ export function Projects() {
       </div>
 
       {/* Project Modal */}
+      <DialogPortal forceMount>
       <AnimatePresence>
         {selectedProject && (
-          <div className="fixed inset-0 z-[300] flex items-end sm:items-center justify-center p-0 sm:p-6 isolate">
+          <motion.div key="project-dialog" className="fixed inset-0 z-[300] flex items-end sm:items-center justify-center p-0 sm:p-6 isolate pointer-events-none" transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}>
+            <DialogOverlay forceMount asChild>
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={reducedMotion ? false : { opacity: 0 }}
+              animate={reducedMotion ? { opacity: [1, 1] } : { opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute inset-0 z-[300] bg-background/80 backdrop-blur-sm"
-              onClick={() => setSelectedProject(null)}
+              transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
+              className="absolute inset-0 z-[300] bg-background/80 backdrop-blur-sm pointer-events-auto"
             />
-            
+            </DialogOverlay>
+            <DialogSurface forceMount asChild onCloseAutoFocus={(event) => {
+              event.preventDefault();
+              const target = triggerRef.current;
+              if (target?.isConnected) target.focus();
+              else headingRef.current?.focus();
+            }}>
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative z-[310] w-full max-w-3xl glass-card rounded-t-2xl sm:rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col max-h-[95dvh] sm:max-h-[90vh]"
+              initial={reducedMotion ? false : { opacity: 0, scale: 0.95, y: 20 }}
+              animate={reducedMotion ? { opacity: [1, 1], scale: [1, 1], y: [0, 0] } : { opacity: 1, scale: 1, y: 0 }}
+              exit={reducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.95, y: 20 }}
+              className="pointer-events-auto relative z-[310] w-full max-w-3xl glass-card rounded-t-2xl sm:rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col max-h-[95dvh] sm:max-h-[90vh]"
+              transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
             >
-              <button 
-                onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-black/50 text-white hover:bg-primary hover:text-white transition-colors"
+              <DialogClose asChild>
+              <button
+                type="button"
+                aria-label="Close project details"
+                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-black/80 text-white hover:bg-cyan-700 hover:text-white transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
+              </DialogClose>
 
               <div className="h-48 sm:h-64 md:h-80 relative shrink-0 flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10" />
-                {getProjectThumbnail(selectedProject) ? (
-                  <img
-                    src={getProjectThumbnail(selectedProject) as string}
-                    alt={selectedProject.title}
-                    className="max-w-full max-h-full object-contain mx-auto"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 via-secondary/20 to-background" />
-                )}
+                <ProjectImage key={selectedProject.id} project={selectedProject} modal />
               </div>
 
-              <div className="p-6 sm:p-8 flex-grow overflow-y-auto relative z-20 bg-card">
-                <h2 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-4">
+              <div className="p-6 sm:p-8 min-h-0 flex-grow overflow-y-auto overscroll-contain relative z-20 bg-card">
+                <DialogTitle className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-4">
                   {selectedProject.title}
-                </h2>
+                </DialogTitle>
 
                 <p className="text-sm uppercase tracking-[0.3em] text-primary mb-5">
                   {selectedProject.category}
@@ -446,9 +398,9 @@ export function Projects() {
                 </div>
 
                 <div className="prose prose-invert max-w-none mt-2">
-                  <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
+                  <DialogDescription className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                     {selectedProject.longDescription}
-                  </p>
+                  </DialogDescription>
                 </div>
 
                 <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-white/10">
@@ -468,19 +420,12 @@ export function Projects() {
                 </div>
               </div>
             </motion.div>
-          </div>
+            </DialogSurface>
+          </motion.div>
         )}
       </AnimatePresence>
+      </DialogPortal>
     </section>
-  );
-}
-
-// Just for icon typing in Projects preview
-function ArrowRight(props: any) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M5 12h14" />
-      <path d="m12 5 7 7-7 7" />
-    </svg>
+    </Dialog>
   );
 }

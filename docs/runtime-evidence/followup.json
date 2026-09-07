@@ -1,0 +1,158 @@
+{
+  "results": [
+    {
+      "name": "mocked form success",
+      "status": "pass",
+      "detail": {
+        "calls": 1,
+        "pendingCleared": true,
+        "alerts": [
+          "Notification Message sent!Thank you for reaching out. I'll get back to you soon."
+        ]
+      }
+    },
+    {
+      "name": "mocked form http-error",
+      "status": "pass",
+      "detail": {
+        "calls": 1,
+        "pendingCleared": true,
+        "alerts": [
+          "Notification ErrorMock server unavailable"
+        ]
+      }
+    },
+    {
+      "name": "mocked form network-error",
+      "status": "pass",
+      "detail": {
+        "calls": 1,
+        "pendingCleared": true,
+        "alerts": [
+          "Notification ErrorMock network failure"
+        ]
+      }
+    },
+    {
+      "name": "mocked form slow",
+      "status": "pass",
+      "detail": {
+        "calls": 1,
+        "pendingCleared": true,
+        "alerts": [
+          "Notification ErrorDelivery could not be confirmed within 30 seconds. Your message may already have been sent. Please wait before sending again; it will not be retried automatically."
+        ]
+      }
+    },
+    {
+      "name": "form invalid and overlong fields",
+      "status": "pass",
+      "detail": {
+        "empty": [
+          {
+            "id": "contact-name",
+            "error": "Name is required",
+            "label": "Name"
+          },
+          {
+            "id": "contact-email",
+            "error": "Enter a valid reply email address",
+            "label": "Reply email"
+          },
+          {
+            "id": "contact-message",
+            "error": "Message must be at least 10 characters",
+            "label": "Message"
+          }
+        ],
+        "errors": [
+          "String must contain at most 100 character(s)",
+          "Enter a valid reply email address",
+          "String must contain at most 5000 character(s)"
+        ],
+        "mailto": "mailto:mdjahidulislamsarker@gmail.com"
+      }
+    },
+    {
+      "name": "local and external broken image fallback",
+      "status": "pass",
+      "detail": {
+        "projectButtons": 13,
+        "failedImagesRemoved": true
+      }
+    }
+  ],
+  "failures": [],
+  "network": [
+    {
+      "url": "https://codeforces.org/s/0/favicon-32x32.png",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/avatar-256.webp",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/favicon.svg",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/avatar.jpeg",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/project-1-480.webp",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "https://img.youtube.com/vi/5leGbDB31lU/maxresdefault.jpg",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/project-6-480.webp",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/project-7-480.webp",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/project-12-480.webp",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "https://img.youtube.com/vi/cIk5d49OHYo/maxresdefault.jpg",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/project-4-480.webp",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Jahidul183019/ShareBox/main/frontend/public/icon.svg",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:4174/images/project-13-480.webp",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    },
+    {
+      "url": "https://img.youtube.com/vi/xHvuDeWcaHk/maxresdefault.jpg",
+      "failure": "net::ERR_FAILED",
+      "method": "GET"
+    }
+  ]
+}

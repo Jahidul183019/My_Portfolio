@@ -31,22 +31,28 @@ export function Starfield() {
 
     initStars();
 
-    const animate = () => {
+    let frame: number | null = null;
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const draw = (moving: boolean) => {
       ctx.clearRect(0, 0, width, height);
       
       stars.forEach((star) => {
-        star.x += star.vx;
-        star.y += star.vy;
+        if (moving) {
+          star.x += star.vx;
+          star.y += star.vy;
 
-        if (star.x < 0) star.x = width;
-        if (star.x > width) star.x = 0;
-        if (star.y < 0) star.y = height;
-        if (star.y > height) star.y = 0;
+          if (star.x < 0) star.x = width;
+          if (star.x > width) star.x = 0;
+          if (star.y < 0) star.y = height;
+          if (star.y > height) star.y = 0;
 
-        // Pulsing glow effect
-        star.glow += (Math.random() - 0.5) * 0.05;
-        if (star.glow < 0.1) star.glow = 0.1;
-        if (star.glow > 0.8) star.glow = 0.8;
+          // Pulsing glow effect
+          star.glow += (Math.random() - 0.5) * 0.05;
+          if (star.glow < 0.1) star.glow = 0.1;
+          if (star.glow > 0.8) star.glow = 0.8;
+
+        }
 
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
@@ -60,23 +66,47 @@ export function Starfield() {
         ctx.fill();
       });
 
-      requestAnimationFrame(animate);
     };
 
-    animate();
+    const stop = () => {
+      if (frame !== null) cancelAnimationFrame(frame);
+      frame = null;
+    };
+    const animate = () => {
+      frame = null;
+      if (document.hidden || media.matches) return;
+      draw(true);
+      frame = requestAnimationFrame(animate);
+    };
+    const synchronize = () => {
+      stop();
+      if (document.hidden) return;
+      draw(false);
+      if (!media.matches) frame = requestAnimationFrame(animate);
+    };
+    synchronize();
 
     const handleResize = () => {
       width = canvas.width = window.innerWidth;
       height = canvas.height = window.innerHeight;
       initStars();
+      synchronize();
     };
 
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    document.addEventListener("visibilitychange", synchronize);
+    media.addEventListener("change", synchronize);
+    return () => {
+      stop();
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("visibilitychange", synchronize);
+      media.removeEventListener("change", synchronize);
+    };
   }, []);
 
   return (
     <canvas
+      aria-hidden="true"
       ref={canvasRef}
       className="fixed inset-0 z-[-1] pointer-events-none opacity-60"
     />

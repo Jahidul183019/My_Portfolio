@@ -12,6 +12,9 @@ const DialogPortal = DialogPrimitive.Portal
 
 const DialogClose = DialogPrimitive.Close
 
+// Unstyled content for custom animated layouts; retains Radix accessibility.
+const DialogSurface = DialogPrimitive.Content
+
 const DialogOverlay = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Overlay>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
@@ -113,6 +116,7 @@ export {
   DialogTrigger,
   DialogClose,
   DialogContent,
+  DialogSurface,
   DialogHeader,
   DialogFooter,
   DialogTitle,

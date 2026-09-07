@@ -1,3 +1,4 @@
+import { scrollToSection } from "@/lib/scroll";
 import { useEffect } from "react";
 import { useLocation } from "wouter";
 import { CustomCursor } from "@/components/CustomCursor";
@@ -16,11 +17,10 @@ export default function Home() {
     if (!section) return;
 
     // Wait for sections to mount before trying to scroll.
-    requestAnimationFrame(() => {
-      document
-        .getElementById(section)
-        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const frame = requestAnimationFrame(() => {
+      scrollToSection(document.getElementById(section));
     });
+    return () => cancelAnimationFrame(frame);
   }, [location]);
 
   return (

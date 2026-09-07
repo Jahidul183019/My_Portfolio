@@ -1,7 +1,10 @@
+import { useMediaQuery } from "@/hooks/use-media-query";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
+
+import { scrollToSection } from "@/lib/scroll";
 
 const NAV_LINKS = [
   { name: "Home", href: "#home" },
@@ -11,6 +14,7 @@ const NAV_LINKS = [
 ];
 
 export function Navbar() {
+  const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,32 +25,67 @@ export function Navbar() {
     if (root.classList.contains("dark")) return true;
     return true;
   });
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-
-      const sections = NAV_LINKS.map((link) => link.href.substring(1));
+    const sections = NAV_LINKS.map((link) => document.getElementById(link.href.slice(1)));
+    let frame: number | null = null;
+    const update = () => {
+      frame = null;
+      const scrolled = window.scrollY > 50;
       let current = "";
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 150 && rect.bottom >= 150) {
-            current = section;
-            break;
-          }
-        }
+      for (const element of sections) {
+        if (!element) continue;
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= 150 && rect.bottom >= 150) { current = element.id; break; }
       }
-
+      setIsScrolled(scrolled);
       if (current) setActiveSection(current);
     };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const schedule = () => { if (frame === null) frame = requestAnimationFrame(update); };
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      if (frame !== null) cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+    };
   }, []);
+
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+    const observer = new ResizeObserver(([entry]) => {
+      document.documentElement.style.setProperty("--header-height", `${entry.target.getBoundingClientRect().height}px`);
+    });
+    observer.observe(header, { box: "border-box" });
+    return () => { observer.disconnect(); document.documentElement.style.removeProperty("--header-height"); };
+  }, []);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    menuRef.current?.querySelector("button")?.focus();
+    const keydown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsMobileMenuOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    const focusin = (event: FocusEvent) => {
+      if (event.target instanceof Node && !menuRef.current?.contains(event.target) && !menuButtonRef.current?.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    document.addEventListener("keydown", keydown);
+    document.addEventListener("focusin", focusin);
+    return () => {
+      document.removeEventListener("keydown", keydown);
+      document.removeEventListener("focusin", focusin);
+    };
+  }, [isMobileMenuOpen]);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -70,10 +109,11 @@ export function Navbar() {
   };
 
   const scrollTo = (href: string) => {
+    if (isMobileMenuOpen) menuButtonRef.current?.focus();
     setIsMobileMenuOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      scrollToSection(element);
     }
   };
 
@@ -87,14 +127,17 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+          <motion.button
+            type="button"
+            aria-label="Go to home section"
+            initial={reducedMotion ? false : { opacity: 0, x: -20 }}
+            animate={reducedMotion ? { opacity: [1, 1], x: [0, 0] } : { opacity: 1, x: 0 }}
             className="text-2xl font-display font-bold cursor-pointer"
             onClick={() => scrollTo("#home")}
+            transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
           >
             <span className="text-gradient">&lt;JI /&gt;</span>
-          </motion.div>
+          </motion.button>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
@@ -102,10 +145,11 @@ export function Navbar() {
               {NAV_LINKS.map((link, i) => (
                 <motion.button
                   key={link.name}
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
+                  initial={reducedMotion ? false : { opacity: 0, y: -10 }}
+                  animate={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : { opacity: 1, y: 0 }}
+                  transition={reducedMotion ? { duration: 0, delay: 0 } : { delay: i * 0.1 }}
                   onClick={() => scrollTo(link.href)}
+                  aria-current={activeSection === link.href.slice(1) ? "location" : undefined}
                   className={`text-sm font-medium transition-colors hover:text-primary ${
                     activeSection === link.href.substring(1)
                       ? "text-primary"
@@ -115,7 +159,8 @@ export function Navbar() {
                   {link.name}
                   {activeSection === link.href.substring(1) && (
                     <motion.div
-                      layoutId="activeNav"
+                      layoutId={reducedMotion ? undefined : "activeNav"}
+                      transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
                       className="h-0.5 w-full bg-primary mt-1 rounded-full"
                     />
                   )}
@@ -124,14 +169,15 @@ export function Navbar() {
             </nav>
 
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
+              initial={reducedMotion ? false : { opacity: 0 }}
+              animate={reducedMotion ? { opacity: [1, 1] } : { opacity: 1 }}
+              transition={reducedMotion ? { duration: 0, delay: 0 } : { delay: 0.4 }}
             >
               <Button
                 variant="ghost"
                 size="icon"
                 onClick={toggleTheme}
+                aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
                 className="rounded-full"
               >
                 {isDark ? (
@@ -149,6 +195,7 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
+                aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
               className="rounded-full"
             >
               {isDark ? (
@@ -162,6 +209,9 @@ export function Navbar() {
               size="icon"
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
               aria-label="Toggle mobile menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-navigation"
+              ref={menuButtonRef}
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -180,27 +230,32 @@ export function Navbar() {
             {/* Backdrop */}
             <motion.div
               key="backdrop"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={reducedMotion ? false : { opacity: 0 }}
+              animate={reducedMotion ? { opacity: [1, 1] } : { opacity: 1 }}
               exit={{ opacity: 0 }}
+              transition={reducedMotion ? { duration: 0, delay: 0 } : undefined}
               className="fixed inset-0 z-40 bg-background/60 backdrop-blur-sm md:hidden"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => { setIsMobileMenuOpen(false); menuButtonRef.current?.focus(); }}
             />
 
             {/* Dropdown panel */}
             <motion.div
               key="mobile-menu"
-              initial={{ opacity: 0, y: -12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
-              className="fixed top-[92px] left-0 right-0 z-50 md:hidden mx-4 rounded-2xl border border-white/10 bg-card/80 backdrop-blur-xl shadow-2xl overflow-hidden"
+              id="mobile-navigation"
+              ref={menuRef}
+              style={{ top: "calc(var(--header-height, 84px) + 8px)" }}
+              initial={reducedMotion ? false : { opacity: 0, y: -12 }}
+              animate={reducedMotion ? { opacity: [1, 1], y: [0, 0] } : { opacity: 1, y: 0 }}
+              exit={reducedMotion ? { opacity: 0 } : { opacity: 0, y: -12 }}
+              transition={reducedMotion ? { duration: 0, delay: 0 } : { duration: 0.2, ease: "easeOut" }}
+              className="fixed left-0 right-0 z-50 md:hidden mx-4 rounded-2xl border border-white/10 bg-card/80 backdrop-blur-xl shadow-2xl overflow-y-auto max-h-[calc(100dvh-var(--header-height,84px)-16px)]"
             >
               <nav className="flex flex-col p-3 gap-1">
                 {NAV_LINKS.map((link) => (
                   <button
                     key={link.name}
                     onClick={() => scrollTo(link.href)}
+                  aria-current={activeSection === link.href.slice(1) ? "location" : undefined}
                     className={`w-full text-left text-base font-medium px-4 py-3 rounded-xl transition-colors ${
                       activeSection === link.href.substring(1)
                         ? "bg-primary/15 text-primary"

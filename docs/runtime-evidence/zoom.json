@@ -1,0 +1,41 @@
+{
+  "browser": "148.0.7778.96",
+  "results": [
+    {
+      "path": "/",
+      "zoom": {
+        "zoom": 2
+      },
+      "dims": {
+        "width": 720,
+        "height": 500,
+        "doc": 720,
+        "dpr": 2
+      }
+    },
+    {
+      "path": "/projects",
+      "zoom": {
+        "zoom": 2
+      },
+      "dims": {
+        "width": 720,
+        "height": 500,
+        "doc": 720,
+        "dpr": 2
+      }
+    },
+    {
+      "path": "/contact",
+      "zoom": {
+        "zoom": 2
+      },
+      "dims": {
+        "width": 720,
+        "height": 500,
+        "doc": 720,
+        "dpr": 2
+      }
+    }
+  ]
+}

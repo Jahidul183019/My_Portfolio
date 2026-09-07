@@ -1,0 +1,297 @@
+{
+  "cycles": [
+    {
+      "home": {
+        "raf": 2,
+        "intervals": [
+          3000
+        ],
+        "paints": 62,
+        "commits": 7,
+        "hidden": false,
+        "listeners": {
+          "window:resize": 4,
+          "document:visibilitychange": 2,
+          "window:pointermove": 1,
+          "window:pointerover": 1,
+          "window:pointerout": 1,
+          "window:scroll": 1
+        }
+      },
+      "absent": {
+        "raf": 1,
+        "intervals": [],
+        "paints": 62,
+        "commits": 8,
+        "hidden": false,
+        "listeners": {
+          "window:resize": 1,
+          "document:visibilitychange": 0,
+          "window:pointermove": 0,
+          "window:pointerover": 0,
+          "window:pointerout": 0,
+          "window:scroll": 0
+        }
+      },
+      "resize": [
+        "()=>{this.root.updateBlockedByResize=!0,d&&d(),d=KT(f,250),aa.hasAnimatedSinceResize&&(aa.hasAnimatedSinceResize=!1,this.nodes.forEach(Gm))}"
+      ]
+    },
+    {
+      "home": {
+        "raf": 2,
+        "intervals": [
+          3000
+        ],
+        "paints": 124,
+        "commits": 12,
+        "hidden": false,
+        "listeners": {
+          "window:resize": 4,
+          "document:visibilitychange": 2,
+          "window:pointermove": 1,
+          "window:pointerover": 1,
+          "window:pointerout": 1,
+          "window:scroll": 1
+        }
+      },
+      "absent": {
+        "raf": 1,
+        "intervals": [],
+        "paints": 124,
+        "commits": 13,
+        "hidden": false,
+        "listeners": {
+          "window:resize": 1,
+          "document:visibilitychange": 0,
+          "window:pointermove": 0,
+          "window:pointerover": 0,
+          "window:pointerout": 0,
+          "window:scroll": 0
+        }
+      },
+      "resize": [
+        "()=>{this.root.updateBlockedByResize=!0,d&&d(),d=KT(f,250),aa.hasAnimatedSinceResize&&(aa.hasAnimatedSinceResize=!1,this.nodes.forEach(Gm))}"
+      ]
+    },
+    {
+      "home": {
+        "raf": 2,
+        "intervals": [
+          3000
+        ],
+        "paints": 186,
+        "commits": 17,
+        "hidden": false,
+        "listeners": {
+          "window:resize": 4,
+          "document:visibilitychange": 2,
+          "window:pointermove": 1,
+          "window:pointerover": 1,
+          "window:pointerout": 1,
+          "window:scroll": 1
+        }
+      },
+      "absent": {
+        "raf": 0,
+        "intervals": [],
+        "paints": 186,
+        "commits": 18,
+        "hidden": false,
+        "listeners": {
+          "window:resize": 1,
+          "document:visibilitychange": 0,
+          "window:pointermove": 0,
+          "window:pointerover": 0,
+          "window:pointerout": 0,
+          "window:scroll": 0
+        }
+      },
+      "resize": [
+        "()=>{this.root.updateBlockedByResize=!0,d&&d(),d=KT(f,250),aa.hasAnimatedSinceResize&&(aa.hasAnimatedSinceResize=!1,this.nodes.forEach(Gm))}"
+      ]
+    }
+  ],
+  "rects": [
+    {
+      "id": "about",
+      "wait": 300,
+      "scrollY": 786,
+      "section": 172,
+      "heading": 233.7373504638672,
+      "header": 70.84375,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "about",
+      "wait": 800,
+      "scrollY": 862,
+      "section": 96,
+      "heading": 160,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "about",
+      "wait": 1000,
+      "scrollY": 862,
+      "section": 96,
+      "heading": 160,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "projects",
+      "wait": 300,
+      "scrollY": 2375,
+      "section": 688.5,
+      "heading": 771.386474609375,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "projects",
+      "wait": 800,
+      "scrollY": 2968,
+      "section": 95.5,
+      "heading": 159.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "projects",
+      "wait": 1000,
+      "scrollY": 2968,
+      "section": 95.5,
+      "heading": 159.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "contact",
+      "wait": 300,
+      "scrollY": 4288,
+      "section": 5078.5,
+      "heading": 5162.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "contact",
+      "wait": 800,
+      "scrollY": 9178,
+      "section": 188.5,
+      "heading": 252.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "contact",
+      "wait": 1000,
+      "scrollY": 9271,
+      "section": 95.5,
+      "heading": 159.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "projects",
+      "wait": 300,
+      "scrollY": 7951,
+      "section": -4887.5,
+      "heading": -4823.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "projects",
+      "wait": 800,
+      "scrollY": 3047,
+      "section": 16.5,
+      "heading": 80.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "projects",
+      "wait": 1000,
+      "scrollY": 2968,
+      "section": 95.5,
+      "heading": 159.5,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "about",
+      "wait": 300,
+      "scrollY": 1532,
+      "section": -574,
+      "heading": -510,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "about",
+      "wait": 800,
+      "scrollY": 862,
+      "section": 96,
+      "heading": 160,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "about",
+      "wait": 1000,
+      "scrollY": 862,
+      "section": 96,
+      "heading": 160,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "home",
+      "wait": 300,
+      "scrollY": 93,
+      "section": -93,
+      "heading": 41,
+      "header": 69,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "home",
+      "wait": 800,
+      "scrollY": 0,
+      "section": 0,
+      "heading": 134,
+      "header": 84,
+      "offset": "96px",
+      "fonts": "loaded"
+    },
+    {
+      "id": "home",
+      "wait": 1000,
+      "scrollY": 0,
+      "section": 0,
+      "heading": 134,
+      "header": 84,
+      "offset": "96px",
+      "fonts": "loaded"
+    }
+  ]
+}
