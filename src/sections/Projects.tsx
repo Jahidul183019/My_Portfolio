@@ -154,6 +154,7 @@ const PROJECTS: Project[] = [
     longDescription: "Coursework from the Microcontroller and Embedded System Lab using the STM32 NUCLEO-F446RE board. Covers HAL-based programming with STM32CubeMX and STM32CubeIDE, along with bare-metal programming through direct register manipulation. Includes lab assignments on GPIO, timers, interrupts, UART, and other embedded-system concepts.",
     category: "Embedded",
     technologies: ["C", "STM32", "ARM Cortex-M4", "HAL", "Bare Metal"],
+    thumbnail: "project-11.png",
     featured: false,
     links: [
       { label: "Code", href: "https://github.com/Jahidul183019/STM-32", kind: "github" },
