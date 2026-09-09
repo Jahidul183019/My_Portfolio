@@ -150,8 +150,8 @@ const PROJECTS: Project[] = [
   {
     id: 11,
     title: "STM-32 Labs",
-    description: "Step-by-step STM32 labs for NUCLEO-F446RE covering both HAL and bare-metal embedded programming.",
-    longDescription: "A collection of step-by-step STM32 labs for the NUCLEO-F446RE board. Covers both HAL-based programming (using STM32CubeMX code generation and STM32CubeIDE) and bare-metal programming (direct register manipulation without HAL). Includes assignments on GPIO, timers, interrupts, UART, and more with detailed setup instructions for macOS and Windows.",
+    description: "Microcontroller and Embedded System Lab Course.",
+    longDescription: "Coursework from the Microcontroller and Embedded System Lab using the STM32 NUCLEO-F446RE board. Covers HAL-based programming with STM32CubeMX and STM32CubeIDE, along with bare-metal programming through direct register manipulation. Includes lab assignments on GPIO, timers, interrupts, UART, and other embedded-system concepts.",
     category: "Embedded",
     technologies: ["C", "STM32", "ARM Cortex-M4", "HAL", "Bare Metal"],
     featured: false,
